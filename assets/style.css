@@ -736,6 +736,21 @@ article .meta a:hover {
   font-weight:700;
 }
 
+.share {
+  width: 100%;
+  font-family: 'roboto condensed',sans-serif;
+  text-align: center;
+  font-size: 25px;
+  background: rgba(235,235,235,0.75);
+  padding: 10px 25px;
+}
+
+.share a {
+  display:block;
+  width:100%;
+  height:auto;
+}
+
 .pagination {
   text-align:center;
   font-family:'Open Sans', sans-serif;

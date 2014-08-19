@@ -44,7 +44,7 @@ Set up a link to your Twitter profile:
 2. Enter the following in the config form:
    - Name: **twitter_url**
    - Value: **http://www.twitter.com/yourusername**
-3. Click update
+3. Click save.
 
    
 ## Credits

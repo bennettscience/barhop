@@ -38,7 +38,7 @@
             <li class="list-heading">Navigation</li>
 	    <li class="list-item"><a href="<?php echo base_url(); ?>" title="<?php echo site_name(); ?>">Home</a></li>
 	    <li class="list-item"><a href="http://www.brianbennett.org/">About</a></li>
-	    <li class="list-item"><a href="http://www.twitter.com/bennettscience">Twitter</a></li>
+	    <li class="list-item"><a href="<?php echo site_meta('twitter_url'); ?>">Twitter</a></li>
             <li class="list-heading">Categories</li>
             <?php while(categories()) : ?>
             <li class="list-item"><a href="<?php echo category_url(); ?>" title="<?php echo category_title(); ?>"><?php echo category_title(); ?></a></li>
