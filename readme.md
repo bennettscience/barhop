@@ -28,6 +28,25 @@ Barhop uses featured images to give a clean, modern look to your blog, but it mu
    - Paste an image source URL into the Featured Image field.
    - Images can be static *or* animated GIFs.
 
+### Twitter
+Anchor CMS is so light because it comes completely unconfigured.
+
+Set up a reusable username variable:
+
+1. Create a new Custom Field under **Extend > Site Variables** in the admin settings.
+2. Enter the following in the config form:
+   - Name: **twitter_account**
+   - Value: **yourusername** - do **not** include '@'!
+
+Set up a link to your Twitter profile:
+
+1. Create a new Site Variable under **Extend > Site Variables**
+2. Enter the following in the config form:
+   - Name: **twitter_url**
+   - Value: **http://www.twitter.com/yourusername**
+3. Click update
+
+   
 ## Credits
 
 This theme is built for [Anchor CMS](http://www.anchorcms.com) and uses the [jPanelMenu](http://jpanelmenu.com) library.
