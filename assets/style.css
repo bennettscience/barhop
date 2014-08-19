@@ -743,7 +743,7 @@ article .meta a:hover {
 
 /* jPanelMenu Styles */
 .site-search {
-  margin:0;
+  margin:2px;
   padding:0 10px;
   background-color:rgb(245,245,245);
 }
@@ -771,6 +771,7 @@ a.menu-trigger {
   display:block;
   padding:0 25px;
 }
+
 #jPanelMenu-menu ul {
   width:100%;
   height:35px;
