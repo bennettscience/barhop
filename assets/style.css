@@ -1,0 +1,963 @@
+/*
+Theme Name: Barhop
+Theme URI: INSERT GITHUB
+Author: Brian Bennett
+Author URI: http://www.brianbennett.org/blog
+Description: Bars and images
+Version: 0.1
+License: GNU General Public License
+
+/* --------------------- IMPORTS ----------------------- */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
+
+/* ----------------------------------------------------------- */
+/* Reset
+-------------------------------------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+  color:#333332;
+  /* height: 100%; */
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+  /* height: 55px; */
+}
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+blockquote p {
+  font-family:'Open Sans',sans-serif;
+  font-weight: 400;
+  font-size:28px;
+  color: #565656 !important;
+  text-align: center;
+}
+.pullquote {
+    margin: 45px -100px;
+    border: 0;
+    text-align:center;
+    font-family:'Open Sans', sans-serif !important;
+    font-size:28px;
+    font-size:2.8rem;
+    font-weight: 700;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+code,
+kbd,
+tt,
+var {
+  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+mark,
+ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  bottom: 1ex;
+}
+sub {
+  top: .5ex;
+}
+small {
+  font-size: 75%;
+}
+big {
+  font-size: 125%;
+}
+figure {
+  margin: 0;
+}
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+th {
+  font-weight: bold;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* Corrects font size not being inherited in all browsers */
+
+  margin: 0;
+  /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+
+  vertical-align: baseline;
+  *vertical-align: middle;
+  /* Improves appearance and consistency in all browsers */
+
+}
+button,
+input {
+  line-height: normal;
+  /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+
+  *overflow: visible;
+  /* Corrects inner spacing displayed oddly in IE6/7 */
+
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid #dddddd;
+  border-color: #ccc #ccc #bbb #ccc;
+  border-radius: 3px;
+  background: #e6e6e6;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  /* Improves usability and consistency of cursor style between image-type 'input' and others */
+
+  -webkit-appearance: button;
+  /* Corrects inability to style clickable 'input' types in iOS */
+
+  font-size: 12px;
+  font-size: 1.4rem;
+  line-height: 1;
+  padding: 1.12em 1.5em 1em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  border-color: #ccc #bbb #aaa #bbb;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+}
+button:focus,
+html input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+html input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+  border-color: #aaa #bbb #bbb #bbb;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* Addresses box sizing set to content-box in IE8/9 */
+
+  padding: 0;
+  /* Addresses excess padding in IE8/9 */
+
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* Addresses appearance set to searchfield in S5, Chrome */
+
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+
+  border: 0;
+  padding: 0;
+}
+input[type=text],
+input[type=email],
+textarea {
+  color: #888888;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+  color: #101010;
+}
+input[type=text],
+input[type=email] {
+  padding: 3px;
+}
+textarea {
+  overflow: auto;
+  /* Removes default vertical scrollbar in IE6/7/8/9 */
+
+  padding: 10px;
+  vertical-align: top;
+  /* Improves readability and alignment in all browsers */
+
+  width: 98%;
+}
+/* ------------------------- STYLES ------------------------------------- */
+body,
+button,
+input,
+select {
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  font-family: serif;
+  line-height: 30px;
+  font-size: 24px;
+  font-size: 1.8rem;
+}
+
+/* -------------------------- TYPOGRAPHY ------------------------------------ */
+/* ---------------------------------------------------------------------------*/
+/* -------------------------- HEADINGS -------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-family: "Arvo", Georgia, serif;
+}
+h1 {
+  line-height: 71.03999999999999px;
+  font-size: 48px;
+  font-size: 4.8rem;
+}
+h2 {
+  line-height: 50.32px;
+  font-size: 34px;
+  font-size: 3.4rem;
+}
+h3 {
+  line-height: 41.44px;
+  font-size: 28px;
+  font-size: 2.8rem;
+}
+h4 {
+  line-height: 26.64px;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+  margin-bottom: 1.5em;
+}
+/* Text elements */
+p {
+  margin-bottom: 1.5em;
+}
+ul,
+ol {
+  margin: 0 0 1.5em 3em;
+}
+ul {
+  list-style: none;
+  /* float: left; */
+}
+ol {
+  list-style: decimal;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+li {
+  font-family:'Roboto Condensed',sans-serif !important;
+  font-weight:300;
+  font-size:22px;
+  font-size:2.2rem;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin: 0 1.5em 1.5em;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+blockquote {
+  margin: 0 1.5em;
+}
+address {
+  margin: 0 0 1.5em;
+}
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  padding: 1.6em;
+  overflow: auto;
+  max-width: 100%;
+}
+/* Links */
+a {
+  color: #007998;
+  -webkit-transition: color 0.25s ease-in-out;
+  -moz-transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  -ms-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+  text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+  color: rgba(0, 121, 152, 0.5);
+}
+/* -------------------------- ALIGNMENT -------------------------- */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+/* --------------------------- IMAGES ---------------------------- */
+img {
+  width:100%;
+}
+/* --------------------------- SITE HEADER ----------------------------------- */
+header {
+  width:100%;
+  height:55px;
+  display:inline-block;
+}
+
+#menu{
+ display:none;
+}
+
+#blog-title {
+  position: absolute;
+  right:10%;
+  top:10px;
+  text-transform:uppercase;
+  font-family: 'Roboto Condensed','Arial',sans-serif;
+  color:#404040;
+  font-weight:700;
+}
+#trigger {
+  position:absolute;
+  top:10px;
+  left:10%;
+  width:auto;
+  height:auto;
+  background-color:rgb(235,235,235);
+  font-family:'Roboto Condensed', sans-serif;
+  font-weight: 300;
+}
+
+
+/*-------------------------HOME SETTINGS --------------------------------------- */
+body {
+  min-height:100%;
+}
+body #primary {
+  max-width: 80%;
+  margin:0 auto;
+  position:relative;
+}
+
+body #content {
+  height: auto;
+  width: 100%;
+  margin:0 auto;
+}
+
+article {
+  background: transparent;
+  padding:0;
+  display: block;
+  opacity:1;
+  height:100%;
+}
+
+.post {
+    position: inherit;
+    max-height: 400px;
+    height: 250px;
+}
+article .bg-clear {
+  position:relative;
+  height: inherit;
+  width: inherit;
+  background:rgba(235,235,235,0.50);
+}
+article .the-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+article .the-content p {
+  color:#574257;
+  line-height:1.25;
+}
+.title {
+  display:block;
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: 10%;
+  transform: translateY(-10%);
+  -webkit-transform: translateY(-10%);
+  font-size: 36px;
+  font-size:3.8rem;
+  font-weight:700;
+  text-align: center;
+}
+article .title a {
+  text-decoration:none;
+  color: #404040;
+  line-height:1.25;
+  font-family:'Open Sans','Arial',sans-serif;
+  font-weight:800;
+  text-transform:uppercase;
+}
+
+article .title a:hover {
+  color:#3849A6;
+}
+
+article .date {
+  width:inherit;
+  height:auto;
+  position:relative;
+  top: 22%;
+}
+
+article .date p {
+  font-size: 18px;
+  color: #404040;
+  font-family:'Roboto Condensed',sans-serif;
+  font-weight:300;
+  text-align:center;
+  margin:0;
+}
+
+article .post-snippet {
+  display:block;
+  max-width: 80%;
+  height: auto;
+  position: relative;
+  top:10%;
+  margin:0 auto;
+  text-align: center;
+}
+article .post-snippet p {
+  font-size:22px;
+  font-size:2.15rem;
+  font-family:'Roboto Condensed','Arial', sans-serif;
+  font-weight:300;
+  text-transform: none;
+  margin:0;
+}
+article .meta {
+  display: block; 
+  max-width:inherit;
+  margin: 0 auto;
+  position: relative;
+  top: 10%;
+  text-align: center;
+}
+
+article .meta a {
+  color:#404040;
+  font-family:'Roboto Condensed',sans-serif;
+  font-weight:300;
+}
+
+article .meta ul {
+  margin: 0 !important;
+}
+
+article .meta p {
+  display:inline;
+  color:#404040;
+  font-family:'Roboto Condensed',sans-serif;
+  font-weight:300;
+  font-size:21px;
+  margin:0;
+}
+
+article .meta a:hover {
+  color:#3849a6;
+}
+
+.meta {
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
+.meta a {
+  color: #888888;
+  text-decoration: none;
+}
+article .meta a:hover {
+  color: rgba(136, 136, 136, 0.5);
+}
+
+.post-container {
+  position:relative;
+  height:auto;
+}
+
+.featured {
+  height:450px;
+  width:100%;
+  background-size:cover;
+  position: relative;
+}
+
+.featured .title {
+  width:auto;
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  background:rgba(235,235,235,0.5);
+  padding:10px 3px;
+}
+
+.featured .title h1 {
+  text-decoration:none;
+  color: #404040;
+  line-height:1.25;
+  font-family:'Open Sans','Arial',sans-serif;
+  font-weight:800;
+  text-transform:uppercase;
+}
+
+.the-post {
+  width:100%;
+  background: #fff;
+  height:auto;
+}
+
+.the-post .content-container {
+  max-width:650px;
+  margin:0 auto;
+  padding:25px 10px;
+  height: inherit;
+}
+
+.the-post .content-container p {
+  font-family:'Roboto Condensed', sans-serif;
+  font-size:22px;
+  font-size: 2.2rem;
+  font-weight:300;
+}
+
+.the-post .content-container .pullquote p{
+  font-family:'Open sans',sans-serif !important;
+  font-size:29px;
+  font-weight:700;
+}
+
+.pagination {
+  text-align:center;
+  font-family:'Open Sans', sans-serif;
+}
+
+/* jPanelMenu Styles */
+.site-search {
+  margin:0;
+  padding:0 10px;
+  background-color:rgb(245,245,245);
+}
+input.site-search__search-term {
+  -webkit-appearance:none;
+  -webkit-border-radius:0;
+  -webkit-box-shadow:none;
+  outline:none;
+  width:100%;
+  height:60px;
+  padding:0;
+  border:0 none;
+  background-color:rgb(245,245,245);
+  font-family:'Roboto Condensed', sans-serif;
+  font-size:18px;
+  font-size:1.8rem;
+  font-weight:300;
+  vertical-align:middle;
+  color:#888;
+}
+.jPanelMenu-panel {
+  box-shadow: -3px 0 10px #404040;
+}
+a.menu-trigger {
+  display:block;
+  padding:0 25px;
+}
+#jPanelMenu-menu ul {
+  width:100%;
+  height:35px;
+  margin:0 auto;
+  float:left;
+}
+#jPanelMenu-menu li {
+  border-bottom: 1px solid #aaa;
+  padding:5px 10px;
+}
+
+#jPanelMenu-menu li a {
+  display:block;
+}
+#jPanelMenu-menu .list-heading {
+  font-family:'Open Sans';
+  font-size:17px;
+  line-height:18px;
+  background-color:rgba(57,68,63,0.75);
+  color:#aaa;
+}
+#jPanelMenu-menu .list-item {
+  font-size:22px;
+  font-size:1.8rem;
+  line-height:32px;
+  font-weight:400;
+}
+/* #jPanelMenu-menu .list-item:hover {
+  background-color:rgb(235,235,235);
+  -webkit-transition: background 0.25s ease-in-out;
+} */
+#jPanelMenu-menu a {
+  font-family:'Roboto Condensed', sans-serif;
+}
+
+/* Pagination */
+#pagination {
+  margin-bottom: 40px;
+  width: 100%;
+}
+#pagination .past-page {
+  float: right;
+}
+#pagination .next-page {
+  float: left;
+}
+/* Comments */
+h3#comments {
+  margin-bottom: 80px;
+  font-size: 16px;
+}
+.commentlist {
+  list-style: none;
+  margin: 0;
+}
+.commentlist .comment {
+  margin: 0 0 40px 50px;
+  padding: 20px;
+  position: relative;
+  list-style: none;
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.commentlist .comment .children {
+  margin-top: 40px;
+}
+.commentlist .comment-author {
+  float: left;
+  margin-right: 10px;
+}
+.commentlist .comment-author img {
+  position: absolute;
+  left: -50px;
+  top: 5px;
+}
+.commentlist .comment-author .says {
+  display: none;
+}
+.comment-meta {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.comment-subscription-form,
+.comment-subscription-form {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+#respond {
+  margin-bottom: 80px;
+}
+#respond > h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+#respond form label {
+  color: #888888;
+}
+
+footer {
+  display:block;
+}
+
+#footer-container {
+  width:100%;
+  position:relative;
+  height:75px;
+}
+
+#footer-content {
+  margin:10px auto;
+  max-width:80%;
+  text-align: center;
+}
+
+#footer-content p {
+  font-family:'Roboto Sans', sans-serif;
+  font-weight:300;
+  font-size:14px;
+  font-size:1.4rem;
+  margin-bottom:0;
+}
+/* ------------------------- MEDIA QUERIES ----------------------------------------- */
+@media screen and (max-width: 768px) {
+  .site-nav {
+    position: absolute;
+    width:100%;
+  }
+  .site-nav ul {
+    width:inherit;
+    position:relative;
+    left:0;
+  }
+  .site-nav ul li a {
+    font-size:2.8rem;
+    font-size:28px;
+  }
+  #blog-title {
+    display:none;
+  }
+  article {
+    opacity:1;
+    height:auto;
+  }
+  article .title {
+    position: relative;
+  }
+  article .title a {
+    font-size:2.9rem;
+    font-size:29px;
+  }
+  article .post a {
+  text-decoration:none;
+  color: #3849A6 !important;
+  line-height:1.25;
+  font-family:'Open Sans',sans-serif;
+  font-weight:800;
+  text-transform:uppercase;
+  }
+  article .post-snippet p {
+    font-size: 2.1rem;
+    font-size: 21px;
+  }
+  article .date p {
+    font-size:1.8rem;
+    font-size:18px;
+  }
+  article .meta a {
+    font-size:1.8rem;
+    font-size:18px;
+  }
+  .pullquote {
+    margin:1.5em 0;
+  }
+  .pullquote p {
+    font-family: 'Open Sans', sans-serif;
+    font-size:28px;
+    font-size:2.8rem;
+  }
+}
+@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+  article .post-snippet {
+    display:none;
+  }
+  #footer-container {
+    width:100%;
+    position:relative;
+    
+  }
+}
