@@ -2,7 +2,7 @@
 <div name="home-container">
       <div id="primary">
 	    <div id="content" role="main">
-		  <h1>Search results for "<?php echo search_term(); ?>"</h1>
+		  <h1>Found <?php echo total_search_results(); ?> results for "<?php echo search_term(); ?>"</h1>
 	    <?php if(has_search_results()) : ?>
 		  <?php while(search_results()) : ?>
 			<?php if(article_custom_field('featured-image')): ?>
