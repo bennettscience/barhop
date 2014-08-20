@@ -22,7 +22,7 @@
       </div>
       <?php if(has_menu_items()) : ?>
         <div role="navigation" id="menu">
-	  <form class="site-search" action="/barhop/search" method="post">
+	  <form class="site-search" action="/search" method="post">
 	    <input type="search" class="site-search__search-term" name="term" placeholder="Search..." value>
 	      <div id="text-field-container" pseudo="-webkit-texfield-decoration-container">
 		<div id="decoration"></div>
