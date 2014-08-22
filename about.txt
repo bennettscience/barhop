@@ -1,0 +1,5 @@
+Theme Name:     Barhop
+Description:    Using responsive bars for simple navigation and reading.
+Author Name:    Brian Bennett
+Author Site:    http://www.brianbennett.org/blog
+License:        http://licence.visualidiot.com/
