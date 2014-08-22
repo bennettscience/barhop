@@ -1,6 +1,6 @@
 /*
 Theme Name: Barhop
-Theme URI: https://github.com/TSCBennett/barhop
+Theme URI: INSERT GITHUB
 Author: Brian Bennett
 Author URI: http://www.brianbennett.org/blog
 Description: Bars and images
@@ -356,6 +356,7 @@ select {
   line-height: 30px;
   font-size: 24px;
   font-size: 1.8rem;
+  height:100%;
 }
 
 /* -------------------------- TYPOGRAPHY ------------------------------------ */
@@ -757,6 +758,7 @@ article .meta a:hover {
 }
 
 /* jPanelMenu Styles */
+
 .site-search {
   margin:2px;
   padding:0 10px;
