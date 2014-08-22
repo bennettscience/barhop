@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" style="height:100%;">
   <head>
     <!-- Meta -->
     <meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="<?php echo theme_url('assets/favicon.ico'); ?>" type="image/x-icon" />
   </head>
   
-  <body>
+  <body style="height:100%;">
     <header class="header">
       <div id="trigger">
           <a href="#menu-block" class="menu-trigger">Menu</a>
@@ -34,17 +34,19 @@
 	    </input>
 	  </form>
 	  <ul>
-            <?php while(menu_items()) : ?>
             <li class="list-heading">Navigation</li>
-	    <li class="list-item"><a href="<?php echo base_url(); ?>" title="<?php echo site_name(); ?>">Home</a></li>
-	    <li class="list-item"><a href="http://www.brianbennett.org/">About</a></li>
-	    <li class="list-item"><a href="<?php echo site_meta('twitter_url'); ?>">Twitter</a></li>
+	    <li class="list-item"><a href="<?php echo base_url(); ?>" title="home">Home</a></li>
+	    <?php while(menu_items()) : ?>
+	    	    <li class="list-item"><a href="<?php echo menu_url('include-in-menu'); ?>" title="<?php echo menu_title(); ?>"><?php echo menu_name(); ?></a></li>
+	    <?php endwhile; ?>
             <li class="list-heading">Categories</li>
             <?php while(categories()) : ?>
             <li class="list-item"><a href="<?php echo category_url(); ?>" title="<?php echo category_title(); ?>"><?php echo category_title(); ?></a></li>
             <?php endwhile; ?>
+	    <li class="list-heading">More</li>
+	    <li class="list-item"><a href="<?php echo site_meta('twitter_url'); ?>" title="Twitter">Twitter</a></li>
+	    <li class="list-item"><a href="<?php echo base_url('/admin'); ?>" title="admin">Admin</a></li>
 	  </ul><!-- #menu -->
-          <?php endwhile; ?>
       </div><!-- navigation -->
     </header><!-- header -->
     <?php endif; ?>
