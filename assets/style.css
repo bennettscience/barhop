@@ -544,6 +544,10 @@ body #content {
   margin:0 auto;
 }
 
+#content h1 {
+  font-family:'Roboto Condensed', 'Helvetica', sans-serif;
+}
+
 article {
   background: transparent;
   padding:0;
@@ -739,17 +743,20 @@ article .meta a:hover {
 }
 
 .share {
-  font-family: 'roboto condensed',sans-serif;
-  text-align: center;
-  font-size: 25px;
-  background: rgba(235,235,235,0.75);
-  padding: 10px 25px;
+  height:24px;
+  width:auto;
+  float:right;
+}
+
+.share img {
+  height:24px;
+  width:auto;
 }
 
 .share a {
   display:block;
-  width:100%;
-  height:auto;
+  width:auto;
+  height:24px;
 }
 
 .pagination {
@@ -915,11 +922,12 @@ h3#comments {
 
 footer {
   display:block;
+  width:100%;
+  bottom:0;
 }
 
 #footer-container {
   width:100%;
-  position:relative;
   height:75px;
 }
 
@@ -935,6 +943,7 @@ footer {
   font-size:14px;
   font-size:1.4rem;
   margin-bottom:0;
+  padding:4px;
 }
 /* ------------------------- MEDIA QUERIES ----------------------------------------- */
 @media screen and (max-width: 768px) {

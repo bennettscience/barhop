@@ -1,8 +1,8 @@
 <?php theme_include('header'); ?>
-<div name="home-container">
+<div name="home-container" style="height:100%;">
       <div id="primary">
 	    <div id="content" role="main">
-		  <h1>Found <?php echo total_search_results(); ?> results for "<?php echo search_term(); ?>"</h1>
+		  <h1>Found <?php echo total_search_results() . pluralise(total_search_results(), ' result'); ?> for "<?php echo search_term(); ?>"</h1>
 	    <?php if(has_search_results()) : ?>
 		  <?php while(search_results()) : ?>
 			<?php if(article_custom_field('featured-image')): ?>
@@ -32,7 +32,7 @@
 			      </article><!-- post -->
 		  <?php endwhile; ?>
 	    <?php else: ?>
-			<p>No search results found</p>
+			<p>There's nothing matching that search.</p>
 	    <?php endif; ?>
 	    </div>
       </div>
