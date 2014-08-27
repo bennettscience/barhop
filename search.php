@@ -32,7 +32,11 @@
 			      </article><!-- post -->
 		  <?php endwhile; ?>
 	    <?php else: ?>
-			<p>There's nothing matching that search.</p>
+		  <div class="search-featured">
+			<div class="title">
+			      <p>Sorry, nothing matched. <a class="menu-trigger" href="menu-block">Try again?</a></p>
+			</div>
+		  </div>
 	    <?php endif; ?>
 	    </div>
       </div>

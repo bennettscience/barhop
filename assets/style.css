@@ -790,6 +790,25 @@ article .meta a:hover {
   text-transform:uppercase;
 }
 
+.search-featured {
+  height:450px;
+  width:100%;
+  background:url('https://farm3.staticflickr.com/2434/4038463941_aebc747860_o.jpg') center center no-repeat;
+  background-size: cover;
+  position:relative; 
+}
+
+.search-featured .title {
+  background-color:transparent;
+  font-family:'Roboto Condensed', 'Arial', sans-serif;
+  font-weight:700;
+  position:relative;
+  top:15%;
+}
+.search-featured .title a {
+  display:inline;
+  padding:0;
+}
 /* jPanelMenu Styles */
 
 .site-search {
