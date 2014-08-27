@@ -34,17 +34,17 @@
 	    </input>
 	  </form>
 	  <ul>
-            <li class="list-heading">Navigation</li>
+            <li class="list-heading">Pages</li>
 	    <li class="list-item"><a href="<?php echo base_url(); ?>" title="home">Home</a></li>
 	    <?php while(menu_items()) : ?>
 	    	    <li class="list-item"><a href="<?php echo menu_url('include-in-menu'); ?>" title="<?php echo menu_title(); ?>"><?php echo menu_name(); ?></a></li>
 	    <?php endwhile; ?>
-            <li class="list-heading">Categories</li>
-            <?php while(categories()) : ?>
-            <li class="list-item"><a href="<?php echo category_url(); ?>" title="<?php echo category_title(); ?>"><?php echo category_title(); ?></a></li>
+	    <li class="list-heading">Categories</li>
+	    <?php while(categories()) : ?>
+            <li class="list-item"><a href="<?php echo category_url(); ?>" title="<?php echo category_title(); ?>"><?php echo category_title(); ?> (<?php echo category_count(); ?>)</a></li>
             <?php endwhile; ?>
-	    <li class="list-heading">More</li>
-	    <?php if(twitter_account()): ?>
+            <li class="list-heading">More</li>
+	    <?php if(site_meta('twitter_account')): ?>
 	    <li class="list-item"><a href="<?php echo site_meta('twitter_url'); ?>" title="Twitter">Twitter</a></li>
 	    <?php endif; ?>
 	    <li class="list-item"><a href="<?php echo rss_url(); ?>">RSS</a></li>

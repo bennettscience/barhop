@@ -1,7 +1,7 @@
 <?php
 
 function twitter_account() {
-    return site_meta('twitter', 'bennettscience');
+    return Config::get('meta.twitter');
 }
 
 function twitter_url() {

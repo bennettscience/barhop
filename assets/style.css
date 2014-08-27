@@ -793,6 +793,7 @@ article .meta a:hover {
 .search-featured {
   height:450px;
   width:100%;
+  /* Photo credit: creative commons licensed (BY-ND) flickr photo by Joel Ye: http://flickr.com/photos/2otte/4038463941 */
   background:url('https://farm3.staticflickr.com/2434/4038463941_aebc747860_o.jpg') center center no-repeat;
   background-size: cover;
   position:relative; 
