@@ -29,11 +29,6 @@
 	    </div><!-- -bg-clear -->
           </article><!-- post -->
           <?php endwhile; endif ?>
-	  <?php if(has_pagination()) : ?>
-	    <div class="pagination">
-		  <p><?php echo posts_prev(); ?> | <?php echo posts_next(); ?></p>
-	    </div><!-- pagination -->
-	    <?php endif; ?>
         </div>
       </div>
 </div>

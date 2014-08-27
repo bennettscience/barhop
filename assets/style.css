@@ -578,7 +578,7 @@ article .the-content p {
 }
 .title {
   display:block;
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
   position: relative;
   top: 10%;
@@ -616,6 +616,7 @@ article .date p {
   font-weight:300;
   text-align:center;
   margin:0;
+  padding:10px;
 }
 
 article .post-snippet {
@@ -693,7 +694,7 @@ article .meta a:hover {
 }
 
 .featured .title {
-  width:auto;
+  width:50%;
   position: relative;
   top:50%;
   transform: translateY(-50%);
@@ -738,7 +739,6 @@ article .meta a:hover {
 }
 
 .share {
-  width: 100%;
   font-family: 'roboto condensed',sans-serif;
   text-align: center;
   font-size: 25px;
@@ -755,6 +755,32 @@ article .meta a:hover {
 .pagination {
   text-align:center;
   font-family:'Open Sans', sans-serif;
+}
+
+.page-featured {
+  height:250px;
+  width:100%;
+  background-size:cover;
+  position: relative;
+  background-color:rgb(75, 93, 108);
+}
+
+.page-featured .title {
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  background:rgba(235,235,235,0.5);
+  padding:10px 3px;
+}
+
+.page-featured .title h1 {
+  text-decoration:none;
+  color: #404040;
+  line-height:1.25;
+  font-family:'Open Sans','Arial',sans-serif;
+  font-weight:800;
+  text-transform:uppercase;
 }
 
 /* jPanelMenu Styles */

@@ -2,7 +2,7 @@
 <div name="post">
         <div class="post-container">
             <!-- creative commons licensed (BY) flickr photo by The Preiser Project: http://flickr.com/photos/thepreiserproject/12026140993 -->
-            <div class="featured" style="background:url(<?php echo theme_url('assets/lost.jpg'); ?>) center center no-repeat; background-size:cover;position:relative;" >
+            <div class="featured" style="background:url(<?php echo theme_url('assets/404.jpg'); ?>) center center no-repeat; background-size:cover;position:relative;" >
                 <div class="title">
                     <h1>You seem to be lost</h1>
                 </div>
