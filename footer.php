@@ -24,7 +24,7 @@
             })
         });
     </script>
-    <script src="assets/js/jpanel.min.js" type="text/javascript"></script>
+    <script src="<?php echo site_url('assets/js/jpanel.min.js'); ?>" type="text/javascript"></script>
     <script type="text/javascript">
         var JPM = $.jPanelMenu();
         JPM.on();
