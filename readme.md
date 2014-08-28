@@ -53,5 +53,4 @@ This theme is built for [Anchor CMS](http://www.anchorcms.com) and uses the [jPa
 
 ## License
 
-Barhop is licensed with [The MIT License](http://opensource.org/licenses/MIT) and is free to use, modify and distribute.
-Brian Bennett - 2014
+Barhop is created by Brian Bennett (2014) is licensed with [The MIT License](http://opensource.org/licenses/MIT) and is free to use, modify and distribute.
