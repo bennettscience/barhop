@@ -19,5 +19,48 @@
                 </div>
             </article>
         </div>
-    </div>
+        <?php if(comments_open()) : ?>
+        <div class="comments">
+                <form id="comment" class="comment-form" method="post" action="<?php echo comment_form_url(); ?>#comment">
+                <h2>Discussion</h2>
+                        <p class="input"><?php echo comment_form_notifications(); ?></p>
+                        
+                        <p class="input"><?php echo comment_form_input_name('placeholder="Your name"'); ?></p>
+                        
+                        <p class="input"><?php echo comment_form_input_email('placeholder="Your email (not published)"'); ?></p>
+
+                        <p class="input"><?php echo comment_form_input_text('placeholder="Leave your thoughts:"'); ?></p>
+                        
+                        <?php echo comment_form_button(); ?>
+
+                </form>
+                
+                <hr />
+                
+                <?php if(has_comments()) : ?>
+                <ul class="commentlist">
+                        <?php $i = 0; while(comments()) : $i++ ?>
+                        <li class="comment" id="comment-<?php echo comment_id(); ?>">
+                                <div class="wrap">
+                                        <p id="comment-name"><?php echo comment_name(); ?></p>
+                                        
+                                        <div class="comment-content">
+                                                <?php echo comment_text(); ?>
+                                                <br />
+                                                
+                                        </div>
+                                        
+                                        <div class="counter">
+                                                <time><a href="#<?php echo comment_id(); ?>"><?php echo relative_time(comment_time()); ?></a></time>
+                                                <p><?php echo $i; ?> of <?php echo total_comments(); ?></p>
+                                        </div>
+                                </div>
+                        </li>
+                        <?php endwhile; ?>
+                </ul>
+                <?php endif; ?>
+                
+        </div>
+        <?php endif; ?>
+</div>    
 <?php theme_include('footer'); ?>
