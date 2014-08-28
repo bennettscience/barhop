@@ -716,6 +716,16 @@ article .meta a:hover {
   text-transform:uppercase;
 }
 
+.post-meta {
+  margin:15px auto;
+  font-family:'Open Sans', 'Arial', sans-serif;
+}
+
+.post-meta p {
+  margin:0;
+  padding:0;
+}
+
 .the-post {
   width:100%;
   background: #fff;
@@ -725,7 +735,6 @@ article .meta a:hover {
 .the-post .content-container {
   max-width:650px;
   margin:0 auto;
-  padding:25px 10px;
   height: inherit;
 }
 
@@ -746,20 +755,20 @@ article .meta a:hover {
 .share {
   height:24px;
   width:100%;
-  padding:10px;
+}
+
+.share p {
+  margin:0;
+  padding:0;
+  float:left;
 }
 
 .share img {
   height:24px;
   width:auto;
   float:right;
+  padding:0 5px;
 }
-
-/* .share a {
-
-  width:auto;
-  height:24px;
-} */
 
 .pagination {
   font-family:'Open Sans', sans-serif;
@@ -942,6 +951,8 @@ a.menu-trigger {
 }
 
 .comments p {
+  max-width:650px;
+  margin:0 auto;
   font-family:'Roboto Condensed','Arial','Helvetica',sans-serif;
   color:#606060;
   font-size:24px;
