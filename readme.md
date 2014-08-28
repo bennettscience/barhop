@@ -50,3 +50,8 @@ Set up a link to your Twitter profile:
 ## Credits
 
 This theme is built for [Anchor CMS](http://www.anchorcms.com) and uses the [jPanelMenu](http://jpanelmenu.com) library.
+
+## License
+
+Barhop is licensed with [The MIT License](http://opensource.org/licenses/MIT) and is free to use, modify and distribute.
+Brian Bennett - 2014
