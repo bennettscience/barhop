@@ -5,7 +5,8 @@ Barhop is a lightweight theme designed for Anchor CMS. Page templates are in min
 - Fully mobile-responsive design
 - Featured image included in blog list (see below for setup)
 - jPanelMenu.js drawer menu
-- Tagging system in addition to post categories
+- Permalink and Twitter share button on each post
+- Post descriptions displayed on home page
 
 Currently, the Barhop theme is only available for Anchor. I'm planning on porting it over to Wordpress if I can get around to it.
 
@@ -46,7 +47,9 @@ Set up a link to your Twitter profile:
    - Value: **http://www.twitter.com/yourusername**
 3. Click save.
 
-   
+## In the works...
+Anchor is a work in progress, currently on version 0.9. I'm working on building out tagging of posts in addition to categories, sticky posts, permalinks for comments, and searchable pages.
+
 ## Credits
 
 This theme is built for [Anchor CMS](http://www.anchorcms.com) and uses the [jPanelMenu](http://jpanelmenu.com) library.
