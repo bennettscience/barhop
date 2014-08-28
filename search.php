@@ -24,7 +24,7 @@
 					  </div> <!-- post-snippet  -->
 					  <div class="meta">
 						<ul>
-						      <a href="<?php echo category_url(); ?>" class="categories"><?php echo category_title(); ?></a>
+						      <a href="<?php echo article_category_url(); ?>" class="categories"><?php echo article_category(); ?></a> 
 						</ul>
 					  </div><!-- meta -->
 					  </div><!-- content -->
