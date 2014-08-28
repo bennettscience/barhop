@@ -53,7 +53,7 @@
                                         </div>
                                         
                                         <div class="counter">
-                                                <time><a href="#<?php echo comment_id(); ?>"><?php echo relative_time(comment_time()); ?></a></time>
+                                                <time><p><?php echo relative_time(comment_time()); ?></p></time>
                                                 <p><?php echo $i; ?> of <?php echo total_comments(); ?></p>
                                         </div>
                                 </div>
