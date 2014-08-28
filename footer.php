@@ -1,7 +1,7 @@
 <footer name="footer">
       <footer id="footer-container">
 	<div id="footer-content">
-	  <p>Powered by <a href="http://www.anchorcms.com">Anchor</a>, <a href="http://jpanelmenu.com">jPanelMenu</a>, and <a href="http://www.brianbennett.org/">Barhop</a>.</p>
+	  <p>Powered by <a href="http://www.anchorcms.com">Anchor</a>, <a href="http://jpanelmenu.com">jPanelMenu</a>, and <a href="https://github.com/TSCBennett/barhop">Barhop</a>.</p>
 	</div>
       </div>
 </footer>
