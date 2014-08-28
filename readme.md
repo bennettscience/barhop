@@ -1,12 +1,13 @@
 # Barhop
 Barhop is a lightweight theme designed for Anchor CMS. Page templates are in minimal PHP and focus on the writing, not the extra stuff. Some features include:
 
-- Markdown editing in Anchor
+- Markdown and HTML editing in Anchor
 - Fully mobile-responsive design
 - Featured image included in blog list (see below for setup)
 - jPanelMenu.js drawer menu
 - Permalink and Twitter share button on each post
 - Post descriptions displayed on home page
+- Category article counts in the sidebar 
 
 Currently, the Barhop theme is only available for Anchor. I'm planning on porting it over to Wordpress if I can get around to it.
 
