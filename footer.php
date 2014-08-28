@@ -9,9 +9,6 @@
     <!-- jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     
-    <!-- JpanelSlider -->
-    <script src="<?php echo theme_url('/assets/js/jpanel.min.js'); ?>"></script>
-    
     <script type="text/javascript">
         $(document).ready(function() {
             var div = $(".featured"),
