@@ -7,7 +7,9 @@ Barhop is a lightweight theme designed for Anchor CMS. Page templates are in min
 - jPanelMenu.js drawer menu
 - Permalink and Twitter share button on each post
 - Post descriptions displayed on home page
-- Category article counts in the sidebar 
+- Category article counts in the sidebar
+
+See a [live demo](http://dev.brianbennett.org/anchor)
 
 Currently, the Barhop theme is only available for Anchor. I'm planning on porting it over to Wordpress if I can get around to it.
 
