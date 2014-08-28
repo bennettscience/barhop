@@ -58,6 +58,8 @@
                         </li>
                         <?php endwhile; ?>
                 </ul>
+                <?php else : ?>
+                        <p>No comments yet.</p>
                 <?php endif; ?>
                 
         </div>
