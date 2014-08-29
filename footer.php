@@ -10,17 +10,25 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     
     <script type="text/javascript">
-        $(document).ready(function() {
+      $(document).ready(function() {
             var div = $(".featured"),
-                limit = 450;
+		  limit = 450;
             $(window).on('scroll', function() {
-                var st = $(this).scrollTop();
-                if (st <= limit) {
-                    div.css({'opacity' : (1 - st/limit) });
-                }
+		  var st = $(this).scrollTop();
+		  if (st <= limit) {
+			div.css({'opacity' : (1 - st/limit) });
+		  }
             })
-        });
+      });
+      
+      $(".post, .featured").each(function randomColor() {
+	    var color = "#"+(Math.random()*0xFFFFFF<<0).toString(16);
+	    $(this).css("background-color", color)
+      })
+      
+
     </script>
+    
     <script src="<?php echo theme_url('assets/js/jpanel.min.js'); ?>" type="text/javascript"></script>
     <script type="text/javascript">
         var JPM = $.jPanelMenu();

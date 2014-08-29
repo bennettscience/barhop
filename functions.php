@@ -45,5 +45,6 @@ function relative_time($date) {
 			return $rounded . ' ' . pluralise($rounded, $title) . ' ago';
 		}
 	}
-}
+};
+
 ?>
