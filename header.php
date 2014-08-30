@@ -10,6 +10,7 @@
     <!-- Asset Links -->
     <link href="<?php echo theme_url('assets/style.css'); ?>" media="screen" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="<?php echo theme_url('assets/favicon.ico'); ?>" type="image/x-icon" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700|Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
   </head>
   
   <body>
