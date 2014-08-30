@@ -1,5 +1,6 @@
 Theme Name:     Barhop
 Description:    Using responsive bars for simple navigation and reading.
+Version:        1.0.1
 Author Name:    Brian Bennett
 Author Site:    http://www.brianbennett.org/blog
 License:        The MIT License - 2014 - Brian Bennett - http://opensource.org/licenses/MIT
