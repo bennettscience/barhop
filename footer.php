@@ -20,13 +20,6 @@
 		  }
             })
       });
-      
-      $(".post, .featured").each(function randomColor() {
-	    var color = "#"+(Math.random()*0xFFFFFF<<0).toString(16);
-	    $(this).css("background-color", color)
-      })
-      
-
     </script>
     
     <script src="<?php echo theme_url('assets/js/jpanel.min.js'); ?>" type="text/javascript"></script>
