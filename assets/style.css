@@ -964,10 +964,9 @@ footer {
     -webkit-overflow-scrolling: touch;
     max-width:100%;
   }
-  .post-container .featured .title {
+  .title h1 {
     width:auto;
-    overflow:hidden;
-    font-size:1.8rem;
+    font-size:3.8rem;
   }
   article .post-snippet {
     display:none;
