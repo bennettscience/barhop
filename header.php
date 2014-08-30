@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="<?php echo theme_url('assets/favicon.ico'); ?>" type="image/x-icon" />
   </head>
   
-  <body style="height:100%;">
+  <body>
     <header class="header">
       <div id="trigger">
           <a href="#menu-block" class="menu-trigger">Menu</a>
