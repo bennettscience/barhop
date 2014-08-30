@@ -625,6 +625,7 @@ article .meta p {
 .the-post .content-container {
   max-width:650px;
   margin:0 auto;
+  padding:0 10px;
   height: inherit;
 }
 .the-post .content-container p {
@@ -967,9 +968,6 @@ footer {
     width:auto;
     overflow:hidden;
     font-size:1.8rem;
-  }
-  .content-container {
-    padding:0 10px;
   }
   article .post-snippet {
     display:none;
