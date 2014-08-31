@@ -21,7 +21,7 @@
             })
       });
       
-      $(".post, .featured").each(function randomColor() {
+      $(".post").each(function randomColor() {
 	    var color = "#"+(Math.random()*0xFFFFFF<<0).toString(16);
 	    $(this).css("background-color", color)
       })
