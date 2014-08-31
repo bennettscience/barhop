@@ -587,7 +587,7 @@ article .meta p {
   height:auto;
 }
 .featured {
-  height:450px;
+  height:250px;
   width:100%;
   background-size:cover;
   position: relative;
@@ -709,6 +709,7 @@ article .meta p {
   display:inline;
   padding:0;
 }
+
 /* jPanelMenu Styles */
 #menu{
  display:none;
