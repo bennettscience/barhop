@@ -21,9 +21,15 @@
             })
       });
       
+      // Sets the div to be checked for a color
       $(".post").each(function randomColor() {
-	    var color = "#"+(Math.random()*0xFFFFFF<<0).toString(16);
-	    $(this).css("background-color", color)
+	    // Test for the custom field - if empty, run the code
+	    // The 'null' return isn't working for some reason. Another value?
+	    if (article_custom_field('featured-color') == null) {
+		  // Run the random color code and apply it to the div background
+		  var color = "#"+(Math.random()*0xFFFFFF<<0).toString(16);
+		  $(this).css("background-color", color)
+	    }
       })
 
     </script>

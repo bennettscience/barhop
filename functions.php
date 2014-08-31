@@ -47,4 +47,8 @@ function relative_time($date) {
 	}
 };
 
+function featured_color() {
+    return Config::get('meta.color');
+}
+
 ?>

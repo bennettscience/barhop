@@ -5,6 +5,8 @@
             <?php if(has_posts()) : while(posts()) : ?>
 		  <?php if(article_custom_field('featured-image')): ?>
 			<article class="post" style="background:url(<?php echo article_custom_field('featured-image') ?>) center center no-repeat;background-size:cover;">
+		  <?php elseif(article_custom_field('featured-color')) : ?>
+			<article class="post" style="background-color:<?php echo article_custom_field('featured-color') ?>">
 		  <?php else : ?>
 			<article class="post">
 		  <?php endif; ?>
