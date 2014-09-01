@@ -479,7 +479,7 @@ article .bg-clear {
   position:relative;
   height: inherit;
   width: inherit;
-  /* background:rgba(235,235,235,0.50); */
+  background:rgba(235,235,235,0.50); 
 }
 article .the-content {
   position: relative;
@@ -598,7 +598,7 @@ article .meta p {
   top:50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
-  background:rgba(235,235,235,0.5);
+  /* background:rgba(235,235,235,0.5); */
   padding:10px 3px;
 }
 .featured .title h1 {

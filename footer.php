@@ -8,36 +8,36 @@
 
     <!-- jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="<?php echo theme_url('assets/js/jpanel.min.js'); ?>" type="text/javascript"></script>
     
     <script type="text/javascript">
-      $(document).ready(function() {
-            var div = $(".featured"),
-		  limit = 450;
-            $(window).on('scroll', function() {
-		  var st = $(this).scrollTop();
-		  if (st <= limit) {
-			div.css({'opacity' : (1 - st/limit) });
-		  }
-            })
+      $(document).ready(function() {        
+	    var JPM = $.jPanelMenu();
+	    JPM.on();
       });
       
-      // Sets the div to be checked for a color
-      $(".post").each(function randomColor() {
-	    // Test for the custom field - if empty, run the code
-	    // The 'null' return isn't working for some reason. Another value?
-	    if (article_custom_field('featured-color') == null) {
-		  // Run the random color code and apply it to the div background
+      /* $(".post").each(function randomColor() {
+	    var bgCol = $(".post").css('backgroundColor');
+	    if ( bgCol != "rgba(0,0,0,0)" && (bgCol.attr('style').indexOf('image') != none )) {
 		  var color = "#"+(Math.random()*0xFFFFFF<<0).toString(16);
 		  $(this).css("background-color", color)
 	    }
-      })
-
-    </script>
-    
-    <script src="<?php echo theme_url('assets/js/jpanel.min.js'); ?>" type="text/javascript"></script>
-    <script type="text/javascript">
-        var JPM = $.jPanelMenu();
-        JPM.on();
+	    else { return }
+      }); */
+      
+      $(".post").each(function() {
+	    var cs = window.getComputedStyle(this);
+	    if (cs.backgroundImage==="none" && cs.backgroundColor==="transparent" || cs.backgroundColor.match("0, 0, 0")) {
+		  var color = "hsl("+ ~~(Math.random()*360) +",60%,70%)";
+		  $(this).css("background-color", color);   
+	    }
+	    else { return }
+      });
+      
+      /* $(".post").each(function randomColor() {
+	    var color = "#"+(Math.random()*0xFFFFFF<<0).toString(16);
+	    $(this).css('background-color', color)
+      }); */
     </script>
   </body>
 </html>
