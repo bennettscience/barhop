@@ -16,28 +16,14 @@
 	    JPM.on();
       });
       
-      /* $(".post").each(function randomColor() {
-	    var bgCol = $(".post").css('backgroundColor');
-	    if ( bgCol != "rgba(0,0,0,0)" && (bgCol.attr('style').indexOf('image') != none )) {
-		  var color = "#"+(Math.random()*0xFFFFFF<<0).toString(16);
-		  $(this).css("background-color", color)
-	    }
-	    else { return }
-      }); */
-      
       $(".post").each(function() {
 	    var cs = window.getComputedStyle(this);
 	    if (cs.backgroundImage==="none" && cs.backgroundColor==="transparent" || cs.backgroundColor.match("0, 0, 0")) {
-		  var color = "hsl("+ ~~(Math.random()*360) +",60%,70%)";
+		  var color = "hsl("+ ~~(Math.random()*360) +",30%,60%)";
 		  $(this).css("background-color", color);   
 	    }
 	    else { return }
       });
-      
-      /* $(".post").each(function randomColor() {
-	    var color = "#"+(Math.random()*0xFFFFFF<<0).toString(16);
-	    $(this).css('background-color', color)
-      }); */
     </script>
   </body>
 </html>
