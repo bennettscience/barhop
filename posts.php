@@ -1,6 +1,6 @@
 <?php theme_include('header'); ?>
 <div name="home-container">
-      <div id="primary">
+      <div class="primary">
 	<div id="content" role="main">
             <?php if(has_posts()) : while(posts()) : ?>
 		  <?php if(article_custom_field('featured-image')): ?>

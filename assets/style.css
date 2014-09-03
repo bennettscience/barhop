@@ -431,7 +431,7 @@ body {
   min-height:100%;
   -webkit-overflow-scrolling: touch;
 }
-body #primary {
+body .primary {
   max-width: 80%;
   margin:0 auto;
   position:relative;
@@ -866,13 +866,14 @@ a.menu-trigger {
   color:rgb(220,220,220);
 }
 footer {
-
+  position:relative;
 }
 #footer-container {
   width:80%;
   height:75px;
   background:transparent;
   margin:0 auto;
+  padding-top:50px;
 }
 #footer-content {
   text-align: left;
