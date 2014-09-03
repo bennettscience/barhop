@@ -33,6 +33,8 @@ Barhop uses featured images to give a clean, modern look to your blog, but it mu
    - Paste an image source URL into the Featured Image field.
    - Images can be static *or* animated GIFs.
 
+**If you do not set a featured image, a random color will be applied to the Home page and the post header.**
+
 ### Twitter
 Anchor CMS is so light because it comes completely unconfigured.
 
@@ -43,16 +45,8 @@ Set up a reusable username variable:
    - Name: **twitter_account**
    - Value: **yourusername** - do **not** include '@'!
 
-Set up a link to your Twitter profile:
-
-1. Create a new Site Variable under **Extend > Site Variables**
-2. Enter the following in the config form:
-   - Name: **twitter_url**
-   - Value: **http://www.twitter.com/yourusername**
-3. Click save.
-
 ## In the works...
-Anchor is a work in progress, currently on version 0.9. I'm working on building out tagging of posts in addition to categories, sticky posts, permalinks for comments, and searchable pages.
+Anchor is a work in progress, currently on version 0.9. I'm working on building out tagging of posts in addition to categories, sticky posts, and searchable pages.
 
 ## Credits
 
