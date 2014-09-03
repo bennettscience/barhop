@@ -3,11 +3,13 @@
 	<div id="footer-content">
 	  <p>Powered by <a href="http://www.anchorcms.com">Anchor</a>, <a href="http://jpanelmenu.com">jPanelMenu</a>, and <a href="https://github.com/TSCBennett/barhop">Barhop</a>.</p>
 	    <ul>
-	    <li><a href="<?php echo rss_url(); ?>">RSS</a></li>
-	    <li><a href="<?php echo base_url('/admin'); ?>">Admin</a></li>
-	    <?php if(site_meta('twitter_account')) : ?>
-	    <li><a href="<?php echo site_meta('twitter_url'); ?>" title="Twitter">Twitter</a></li>
-	    <?php endif; ?>
+		  <?php if(user_authed()) : ?>
+		  <li><a href="<?php echo base_url('/admin'); ?>">Admin</a></li>
+		  <?php endif; ?>
+		  <li><a href="<?php echo rss_url(); ?>">RSS</a></li>
+		  <?php if(site_meta('twitter_account')) : ?>
+		  <li><a href="<?php echo site_meta('twitter_url'); ?>" title="Twitter">Twitter</a></li>
+		  <?php endif; ?>
 	    </ul>
 	</div>
       </div>
