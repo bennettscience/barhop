@@ -34,8 +34,7 @@
 	    <?php endwhile; ?>
 	    <?php if(has_pagination()) : ?>
 	    <div class="pagination">
-		  <p id="prev"><?php echo posts_prev(); ?></p>
-		  <p id="next"><?php echo posts_next(); ?></p>
+		  <p><?php echo posts_prev(); ?> | <?php echo posts_next(); ?></p>
 	    </div><!-- pagination -->
 	    <?php endif; ?>
         </div>

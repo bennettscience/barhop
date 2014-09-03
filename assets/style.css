@@ -663,13 +663,9 @@ article .meta p {
 }
 .pagination {
   font-family:'Open Sans', sans-serif;
+  text-align:center;
 }
-.pagination #prev {
-  float:left;
-}
-.pagination #next {
-  float:right;
-}
+
 .page-featured {
   height:250px;
   width:100%;
@@ -870,29 +866,42 @@ a.menu-trigger {
   color:rgb(220,220,220);
 }
 footer {
-  display:block;
-  width:100%;
-  bottom:0;
+
 }
 #footer-container {
-  width:100%;
+  width:80%;
   height:75px;
   background:transparent;
+  margin:0 auto;
 }
 #footer-content {
-  margin:0 auto;
-  padding-top:15px;
-  max-width:80%;
-  text-align: center;
-}
-#footer-content p {
+  text-align: left;
   font-family:'Roboto Sans', sans-serif;
   font-weight:300;
   font-size:14px;
   font-size:1.4rem;
+}
+#footer-content p {
   margin-bottom:0;
   padding:4px;
+  float:left;
 }
+#footer-content ul {
+  float:right;
+  display:inline;
+  list-style:none;
+}
+#footer-content ul li {
+  display:inline;
+  margin-left:15px;
+}
+#footer-content ul li a {
+  font-family:'Roboto Sans', sans-serif;
+  font-weight:300;
+  font-size:14px;
+  font-size:1.4rem;
+}
+
 /* ----- MEDIA QUERIES ---------- */
 @media screen and (max-width: 768px) {
   body {
