@@ -10,6 +10,7 @@
     <!-- Asset Links -->
     <link href="<?php echo theme_url('assets/style.css'); ?>" media="screen" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="<?php echo theme_url('assets/favicon.ico'); ?>" type="image/x-icon" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700|Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
   </head>
   
   <body>
@@ -45,7 +46,7 @@
             <?php endwhile; ?>
             <li class="list-heading">More</li>
 	    <?php if(site_meta('twitter_account')): ?>
-	    <li class="list-item"><a href="<?php echo site_meta('twitter_url'); ?>" title="Twitter">Twitter</a></li>
+	    <li class="list-item"><a href="<?php echo twitter_url(); ?>" title="Twitter">Twitter</a></li>
 	    <?php endif; ?>
 	    <li class="list-item"><a href="<?php echo rss_url(); ?>">RSS</a></li>
 	    <li class="list-item"><a href="<?php echo base_url('/admin'); ?>" title="admin">Admin</a></li>
