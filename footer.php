@@ -25,7 +25,7 @@
 	    JPM.on();
       });
       
-      $(".post").each(function() {
+      $('.featured, .post').each(function() {
 	    var cs = window.getComputedStyle(this);
 	    if (cs.backgroundImage==="none" && cs.backgroundColor==="transparent" || cs.backgroundColor.match("0, 0, 0")) {
 		  postID = $(this).attr('id');
@@ -37,7 +37,7 @@
 		  green = 65 + 70*(parseInt(colorChoice.charAt(1)))
 		  blue = 65 + 70*(parseInt(colorChoice.charAt(2)))
       
-		  $(this).css('background-color', "rgb("+red+","+green+","+blue+")")
+		  $(this).css('background-color', "rgb("+red+","+green+","+blue+")") 
 	    }
 	    else { return }
       });
