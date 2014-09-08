@@ -1,13 +1,12 @@
 <?php theme_include('header'); ?>
 <div name="post">
-        <div class="primary">
         <div class="post-container">
             <?php if(article_custom_field('featured-image')) : ?>
             <div class="featured" style="background:url('<?php echo article_custom_field('featured-image')?>') center center no-repeat; background-size:cover;position:relative;" >
             <?php elseif(article_custom_field('featured-color')) : ?>
             <div class="featured" style="background-color:<?php echo article_custom_field('featured-color')?>">
             <?php else : ?>
-            <div class="featured" style="background-color:<?php echo featured_color(); ?>">
+            <div class="featured" id="<?php echo article_id(); ?>">
             <?php endif; ?>
                 <div class="title">
                     <h1><?php echo article_title(); ?></h1>
