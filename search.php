@@ -6,7 +6,7 @@
 	    <?php if(has_search_results()) : ?>
 		  <?php while(search_results()) : ?>
 			<?php if(article_custom_field('featured-image')): ?>
-			      <article class="post" style="background:url(<?php echo article_custom_field('featured-image') ?>) center center no-repeat;background-size:cover;">
+			      <article class="post" style="background:url('<?php echo article_custom_field('featured-image') ?>') center center no-repeat;background-size:cover;">
 			<?php else: ?>
 			      <article class="post">
 			<?php endif; ?>

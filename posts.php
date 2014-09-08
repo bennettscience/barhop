@@ -1,12 +1,14 @@
 <?php theme_include('header'); ?>
 <div name="home-container">
-      <div id="primary">
+      <div class="primary">
 	<div id="content" role="main">
             <?php if(has_posts()) : while(posts()) : ?>
 		  <?php if(article_custom_field('featured-image')): ?>
-			<article class="post" style="background:url(<?php echo article_custom_field('featured-image') ?>) center center no-repeat;background-size:cover;">
+			<article class="post" id="<?php echo article_id(); ?>" style="background:url('<?php echo article_custom_field('featured-image') ?>') center center no-repeat;background-size:cover;">
+		  <?php elseif(article_custom_field('featured-color')) : ?>
+			<article class="post" id="<?php echo article_id(); ?>" style="background-color:<?php echo article_custom_field('featured-color') ?>">
 		  <?php else : ?>
-			<article class="post">
+			<article class="post" id="<?php echo article_ID(); ?>">
 		  <?php endif; ?>
 			      <div class="bg-clear">
 				    <div class="the-content">
@@ -32,8 +34,7 @@
 	    <?php endwhile; ?>
 	    <?php if(has_pagination()) : ?>
 	    <div class="pagination">
-		  <p id="prev"><?php echo posts_prev(); ?></p>
-		  <p id="next"><?php echo posts_next(); ?></p>
+		  <p><?php echo posts_prev(); ?> | <?php echo posts_next(); ?></p>
 	    </div><!-- pagination -->
 	    <?php endif; ?>
         </div>

@@ -43,13 +43,7 @@
 	    <?php while(categories()) : ?>
             <li class="list-item"><a href="<?php echo category_url(); ?>" title="<?php echo category_title(); ?>"><?php echo category_title(); ?> (<?php echo category_count(); ?>)</a></li>
             <?php endwhile; ?>
-            <li class="list-heading">More</li>
-	    <?php if(site_meta('twitter_account')): ?>
-	    <li class="list-item"><a href="<?php echo site_meta('twitter_url'); ?>" title="Twitter">Twitter</a></li>
-	    <?php endif; ?>
-	    <li class="list-item"><a href="<?php echo rss_url(); ?>">RSS</a></li>
-	    <li class="list-item"><a href="<?php echo base_url('/admin'); ?>" title="admin">Admin</a></li>
-	  </ul><!-- #menu -->
+            </ul><!-- #menu -->
       </div><!-- navigation -->
     </header><!-- header -->
     <?php endif; ?>
