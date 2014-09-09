@@ -983,4 +983,13 @@ footer {
     width:100%;
     position:relative;
   }
+  #footer-container ul {
+    margin:0 !important;
+    display:block;
+  }
+  #footer-container p, ul {
+    text-align:center;
+    float: none !important;
+    display:block;
+  }
 }
