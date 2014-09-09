@@ -1,8 +1,7 @@
 <?php theme_include('header'); ?>
-<div name="post">
-        <div class="post-container">
-            <!-- creative commons licensed (BY) flickr photo by The Preiser Project: http://flickr.com/photos/thepreiserproject/12026140993 -->
-            <div class="featured" style="background:url(<?php echo theme_url('assets/404.jpg'); ?>) center center no-repeat; background-size:cover;position:relative;" >
+<div name="404">
+        <div class="404-post-container">
+            <div class="featured" id="404">
                 <div class="title">
                     <h1>You seem to be lost</h1>
                 </div>
