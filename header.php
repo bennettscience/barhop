@@ -14,15 +14,20 @@
   </head>
   
   <body>
-    <header class="header">
-      <div id="trigger">
-          <a href="#menu-block" class="menu-trigger">Menu</a>
-      </div>
+    <div class="sidebar">
       <div id="blog-title">
-	<?php echo site_name(); ?>
+	<a href="<?php echo base_url(); ?>" title="home"><?php echo site_name(); ?></a>
       </div>
-      <?php if(has_menu_items()) : ?>
         <div role="navigation" id="menu">
+	  <?php if(has_menu_items()) : ?>
+	  <div class="page-menu">
+	    <ul>
+	      <?php while(menu_items()) : ?>
+	      <li class="list-item"><a href="<?php echo menu_url('include-in-menu'); ?>" title="<?php echo menu_title(); ?>"><?php echo menu_name(); ?></a></li>
+	      <?php endwhile; ?>
+	    </ul>
+	  </div>  
+	  <?php endif; ?>
 	  <form class="site-search" action="<?php echo search_url(); ?>" method="post">
 	    <input type="search" class="site-search__search-term" name="term" placeholder="Search..." value>
 	      <div id="text-field-container" pseudo="-webkit-texfield-decoration-container">
@@ -34,17 +39,26 @@
 	      </div>
 	    </input>
 	  </form>
-	  <ul>
-            <li class="list-heading">Pages</li>
-	    <li class="list-item"><a href="<?php echo base_url(); ?>" title="home">Home</a></li>
-	    <?php while(menu_items()) : ?>
-	    	    <li class="list-item"><a href="<?php echo menu_url('include-in-menu'); ?>" title="<?php echo menu_title(); ?>"><?php echo menu_name(); ?></a></li>
-	    <?php endwhile; ?>
-	    <li class="list-heading">Categories</li>
-	    <?php while(categories()) : ?>
-            <li class="list-item"><a href="<?php echo category_url(); ?>" title="<?php echo category_title(); ?>"><?php echo category_title(); ?> (<?php echo category_count(); ?>)</a></li>
-            <?php endwhile; ?>
-
+	  <div id="cat">
+	    <select onchange="location = this.options[this.selectedIndex].value;">
+	      <option>Select a category</option>
+	      <?php while(categories()) : ?>
+	      <option value="<?php echo category_url(); ?>"><?php echo category_title(); ?> (<?php echo category_count(); ?>)</option>
+	      <?php endwhile; ?>
+	    </select>
+	  </div>
+	  
       </div><!-- navigation -->
-    </header><!-- header -->
-    <?php endif; ?>
+      <div id="credits">
+	<ul>
+	  <li><a href="<?php echo rss_url(); ?>">RSS</a></li>
+	  <?php if(site_meta('twitter_account')) : ?>
+	  <li><a href="<?php echo site_meta('twitter_url'); ?>">Twitter</a></li>
+	  <?php endif; ?>
+	  <?php if(user_authed()) : ?>
+	  <li><a href="<?php echo base_url('/admin'); ?>">Admin</a></li>
+	  <?php endif; ?>
+	</ul>
+	<p>Powered by <a href="http://www.anchorcms.com">Anchor</a> and <a href="https://github.com/TSCBennett/barhop">Barhop</a>.</p>
+      </div>
+    </div><!-- sidebar -->

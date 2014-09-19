@@ -8,12 +8,10 @@
             <?php else : ?>
             <div class="featured" id="<?php echo article_id(); ?>">
             <?php endif; ?>
-                <div class="title">
-                    <h1><?php echo article_title(); ?></h1>
-                </div>
             </div> <!-- featured image -->
             <article class="the-post">
                 <div class="content-container">
+                <h1><?php echo article_title(); ?></h1>
                     <p><?php echo article_markdown(); ?></p>
                     <div class="share">
                         <p><?php echo article_date(); ?> | <a href="<?php echo article_category_url(); ?>"><?php echo article_category(); ?></a></p>
