@@ -710,6 +710,7 @@ article .meta p {
 }
 .sidebar #menu {
   height:100%;
+  padding:0 20px;
 }
 .sidebar .page-menu {
   height:auto;
@@ -753,7 +754,7 @@ input.site-search__search-term {
   font-size:22px;
   font-size:1.8rem;
   line-height:32px;
-  font-weight:400;
+  font-weight:300;
 }
 a {
   font-family:'Roboto Condensed', sans-serif;
@@ -859,7 +860,6 @@ a {
 #credits {
   height:75px;
   background:transparent;
-  margin:0;
   text-align: left;
   font-family:'Roboto Condensed', sans-serif;
   font-weight:300;
@@ -867,10 +867,10 @@ a {
   font-size:1.4rem;
   position:absolute;
   top:80%;
+  padding:0 20px;
 }
 #credits p {
   margin-bottom:0;
-  float:left;
 }
 #credits ul {
   display:inline;
