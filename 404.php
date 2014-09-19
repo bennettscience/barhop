@@ -1,4 +1,4 @@
-<<?php theme_include('header'); ?>
+<?php theme_include('header'); ?>
 <div name="404">
         <div class="post-container">
             <?php if(page_custom_field('page-featured-image')) : ?>
