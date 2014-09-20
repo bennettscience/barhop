@@ -455,18 +455,18 @@ body #content {
   margin-bottom:15px;
   height:auto;
   margin-bottom:35px;
+  text-align:center;
 }
 #blog-title a{
   text-transform:uppercase;
   font-family: 'Open Sans','Helvetica',sans-serif;
   font-size:3.8rem;
   font-size:38px;
-  color:#404040;
+  color:#eeffee;
   font-weight:700;
-  text-align: center;
 }
 #content h1 {
-  font-family:'Source Sans Pro','Helvetica', sans-serif;
+  font-family:'Merriweather','Helvetica', sans-serif;
 }
 article {
   /* background: transparent; */
@@ -531,7 +531,7 @@ article .date {
 article .date p {
   font-size: 18px;
   color: #404040;
-  font-family:'Source Sans Pro','Helvetica',sans-serif;
+  font-family:'Merriweather','Helvetica',sans-serif;
   font-weight:300;
   text-align:center;
   margin:0;
@@ -549,7 +549,7 @@ article .post-snippet {
 article .post-snippet p {
   font-size:22px;
   font-size:2.15rem;
-  font-family:'Source Sans Pro','Arial', sans-serif;
+  font-family:'Merriweather','Arial', sans-serif;
   font-weight:300;
   text-transform: none;
   margin:0;
@@ -564,7 +564,7 @@ article .meta {
 }
 article .meta a {
   color:#404040;
-  font-family:'Source Sans Pro','Helvetica',sans-serif;
+  font-family:'Merriweather','Helvetica',sans-serif;
   font-weight:300;
 }
 article .meta ul {
@@ -573,7 +573,7 @@ article .meta ul {
 article .meta p {
   display:inline;
   color:#404040;
-  font-family:'Source Sans Pro','Helvetica',sans-serif;
+  font-family:'Merriweather','Helvetica',sans-serif;
   font-weight:300;
   font-size:21px;
   margin:0;
@@ -622,11 +622,12 @@ article .meta p {
   font-family:'Open Sans','Arial',sans-serif;
   font-weight:800;
   text-transform:uppercase;
+  margin:10px 0;
 }
 .the-post .content-container p {
-  font-family:'Source Sans Pro', sans-serif;
-  font-size:22px;
-  font-size: 2.2rem;
+  font-family:'Merriweather', sans-serif;
+  font-size:18px;
+  font-size: 1.8rem;
   font-weight:300;
   color:#000;
 }
@@ -640,7 +641,7 @@ article .meta p {
   width:80%;
 }
 .meta #article p {
-  font-family:'Source Sans Pro','Helvetica',sans-serif;
+  font-family:'Merriweather','Helvetica',sans-serif;
   font-size:14px;
   font-size:1.4rem;
   text-align:left;
@@ -691,7 +692,7 @@ article .meta p {
 }
 .search-featured .title {
   background-color:transparent;
-  font-family:'Source Sans Pro', 'Arial', sans-serif;
+  font-family:'Merriweather', 'Arial', sans-serif;
   font-weight:700;
   position:relative;
   top:15%;
@@ -708,10 +709,14 @@ article .meta p {
   z-index:10;
   height:100%;
   padding:20px;
+  background-color: #242815;
 }
 .sidebar #menu {
   height:100%;
   padding:0 20px;
+}
+.sidebar p, a {
+  color: #eeffee;  
 }
 .sidebar .page-menu {
   height:auto;
@@ -723,8 +728,8 @@ article .meta p {
 .site-search {
   margin:2px;
   padding:0 10px;
-  border:1px solid #848383;
   margin-bottom:35px;
+  background-color: #eeffee;
 }
 input.site-search__search-term {
   -webkit-appearance:none;
@@ -735,7 +740,7 @@ input.site-search__search-term {
   height:45px;
   padding:0;
   border:0 none;
-  font-family:'Source Sans Pro', sans-serif;
+  font-family:'Open Sans', sans-serif;
   font-size:18px;
   font-size:1.8rem;
   font-weight:300;
@@ -758,7 +763,7 @@ input.site-search__search-term {
   font-weight:300;
 }
 a {
-  font-family:'Source Sans Pro', sans-serif;
+  font-family:'Merriweather', sans-serif;
 }
 #pagination {
   margin-bottom: 40px;
@@ -785,7 +790,7 @@ a {
 .comment-form .input {
   display:block;
   margin:10px 0;
-  font-family:'Source Sans Pro', sans-serif;
+  font-family:'Merriweather', sans-serif;
 }
 .comment-form input {
   padding:0 !important;
@@ -810,7 +815,7 @@ a {
 .comments p {
   max-width:650px;
   margin:0 auto;
-  font-family:'Source Sans Pro','Arial','Helvetica',sans-serif;
+  font-family:'Merriweather','Arial','Helvetica',sans-serif;
   color:#606060;
   font-size:24px;
   font-size:2.4rem;
@@ -845,12 +850,19 @@ a {
   float:left;
   padding:0 10px;
 }
+.counter time a {
+  font-family: 'Open Sans', sans-serif;
+  font-size:14px;
+  font-size: 1.4rem;
+  color:rgb(220,220,220);
+}
 .counter p {
   margin:0 10px;
   text-align:right;
-  color:rgb(220,220,220);
+  font-family: 'Open Sans', sans-serif;
   font-size:14px;
-  font-size:1.4rem;
+  font-size: 1.4rem;
+  color:rgb(220,220,220);
 }
 .counter a {
   text-decoration:none;
@@ -862,16 +874,16 @@ a {
   height:75px;
   background:transparent;
   text-align: left;
-  font-family:'Source Sans Pro', sans-serif;
-  font-weight:300;
-  font-size:14px;
-  font-size:1.4rem;
   position:absolute;
   top:80%;
   padding:0 20px;
 }
-#credits p {
+#credits p a {
   margin-bottom:0;
+  font-family:'Open Sans', sans-serif;
+  font-weight:300;
+  font-size:14px;
+  font-size:1.4rem;
 }
 #credits ul {
   display:inline;
@@ -882,7 +894,7 @@ a {
   margin-right:15px;
 }
 #credits ul li a {
-  font-family:'Roboto Sans', sans-serif;
+  font-family:'Open Sans', sans-serif;
   font-weight:300;
   font-size:14px;
   font-size:1.4rem;
