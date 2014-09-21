@@ -1,6 +1,6 @@
 <?php theme_include('header'); ?>
 <div name="home-container" style="height:100%;">
-      <div id="primary">
+      <div class="primary">
 	    <div id="content" role="main">
 		  <h1>Found <?php echo total_search_results() . pluralise(total_search_results(), ' result'); ?> for "<?php echo search_term(); ?>"</h1>
 	    <?php if(has_search_results()) : ?>
@@ -34,7 +34,18 @@
 	    <?php else: ?>
 		  <div class="search-featured">
 			<div class="title">
-			      <p>Sorry, nothing matched. <a class="menu-trigger" href="menu-block">Try again?</a></p>
+			      <p>Sorry, nothing matched. Try again?</p>
+			      <form class="site-search" action="<?php echo search_url(); ?>" method="post">
+				<input type="search" class="site-search__search-term" name="term" placeholder="Search..." value>
+					<div id="text-field-container" pseudo="-webkit-texfield-decoration-container">
+					<div id="decoration"></div>
+					<div id="editing-view-port">
+						<div id="inner-editor"></div>
+					</div>
+					<div pseudo="-webkit-search-cancel-button" id="clear" style="opacity: 0;pointer-events:none;"></div>
+					</div>
+				</input>
+			</form>
 			</div>
 		  </div>
 	    <?php endif; ?>
