@@ -597,6 +597,27 @@ article .meta p {
   height:450px;
   width:100%;
   background-size:cover;
+  background-position: center center;
+  background-repeat:no-repeat;
+  position:relative;
+}
+.featured #featured-credit {
+  position:absolute;
+  bottom:0;
+  right:0;
+  height:auto;
+  width:auto;
+  background:#a7a7a7;
+  padding:3px;
+}
+.featured #featured-credit a {
+  position:relative;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0 auto;
+  color:#eee;
+  font-family: sans-serif;
+  text-decoration: none;
 }
 .post-meta {
   margin:15px auto;

@@ -2,6 +2,12 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     
     <script type="text/javascript">
+      $(document).ready(function() {
+	    var bg = $('.featured').css('background-image');
+	    bg = bg.replace('url(','').replace(')','');
+	    $('.credit').attr('href', bg);
+      });
+      
       $('.featured, .post').each(function() {
 	    var cs = window.getComputedStyle(this);
 	    if (cs.backgroundImage==="none" && cs.backgroundColor==="transparent" || cs.backgroundColor.match("0, 0, 0")) {

@@ -2,7 +2,10 @@
 <div name="post">
         <div class="post-container">
             <?php if(article_custom_field('featured-image')) : ?>
-            <div class="featured" style="background:url('<?php echo article_custom_field('featured-image')?>') center center no-repeat; background-size:cover;position:relative;" >
+            <div class="featured" style="background-image:url('<?php echo article_custom_field('featured-image')?>')" >
+                <div id="featured-credit">
+                        <a class="credit">Image Credit</a>
+                </div>
             <?php elseif(article_custom_field('featured-color')) : ?>
             <div class="featured" style="background-color:<?php echo article_custom_field('featured-color')?>">
             <?php else : ?>
