@@ -49,7 +49,7 @@
 	  </div>
 	  
       </div><!-- navigation -->
-      <div id="credits">
+      <div id="dev-info">
 	<ul>
 	  <li><a href="<?php echo rss_url(); ?>">RSS</a></li>
 	  <?php if(site_meta('twitter_account')) : ?>

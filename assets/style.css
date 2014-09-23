@@ -894,7 +894,7 @@ input.site-search__search-term {
   font-size:1.4rem;
   color:rgb(220,220,220);
 }
-#credits {
+#dev-info {
   height:75px;
   background:transparent;
   text-align: left;
@@ -902,22 +902,22 @@ input.site-search__search-term {
   top:80%;
   padding:0 20px;
 }
-#credits p a {
+#dev-info p a {
   margin-bottom:0;
   font-family:'Open Sans', sans-serif;
   font-weight:300;
   font-size:14px;
   font-size:1.4rem;
 }
-#credits ul {
+#dev-info ul {
   display:inline;
   list-style:none;
 }
-#credits ul li {
+#dev-info ul li {
   display:inline;
   margin-right:15px;
 }
-#credits ul li a {
+#dev-info ul li a {
   font-family:'Open Sans', sans-serif;
   font-weight:300;
   font-size:14px;

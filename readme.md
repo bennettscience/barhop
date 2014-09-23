@@ -4,7 +4,7 @@ Barhop is a lightweight theme designed for Anchor CMS. Page templates are in min
 - Markdown and HTML editing in Anchor
 - Fully mobile-responsive design
 - Featured image included in blog list (see below for setup)
-- Image credit URL automatically added to each post
+- Image credit automatically added to each post (only works with Flickr images)
 - Permalink and Twitter share button on each post
 - Post descriptions displayed on home page
 - Comment permalinks

@@ -4,7 +4,7 @@
             <?php if(article_custom_field('featured-image')) : ?>
             <div class="featured" style="background-image:url('<?php echo article_custom_field('featured-image')?>')" >
                 <div id="featured-credit">
-                        <a class="credit">Image Credit</a>
+                        <a id="credits"></a>
                 </div>
             <?php elseif(article_custom_field('featured-color')) : ?>
             <div class="featured" style="background-color:<?php echo article_custom_field('featured-color')?>">
