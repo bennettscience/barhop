@@ -479,6 +479,9 @@ article {
   position: inherit;
   max-height: 400px;
   height: 250px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 article .bg-clear {
   position:relative;
