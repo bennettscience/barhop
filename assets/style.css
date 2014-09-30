@@ -431,6 +431,9 @@ header {
   height:55px;
   display:inline-block;
 }
+#mobile-header {
+  display:none;
+}
 img {
   width:100%;
 }
@@ -926,105 +929,25 @@ input.site-search__search-term {
   font-size:14px;
   font-size:1.4rem;
 }
-
-/* ----- MEDIA QUERIES ---------- */
+/* ---------- Media queries are for lovers ------------------ */
 @media screen and (max-width: 768px) {
-  body {
-    -webkit-overflow-scrolling: touch;
-  }
-  .site-nav {
-    position: absolute;
-    width:100%;
-  }
-  .site-nav ul {
-    width:inherit;
-    position:relative;
-    left:0;
-  }
-  .site-nav ul li a {
-    font-size:2.8rem;
-    font-size:28px;
-  }
-  #blog-title {
+  .sidebar {
     display:none;
   }
-  article {
-    opacity:1;
-    height:auto;
-  }
-  article .title {
-    position: relative;
-  }
-  article .title a {
-    font-size:2.9rem;
-    font-size:29px;
-  }
-  article .post a {
-  text-decoration:none;
-  color: #3849A6 !important;
-  line-height:1.25;
-  font-family:'Open Sans',sans-serif;
-  font-weight:800;
-  text-transform:uppercase;
-  }
-  article .post-snippet p {
-    font-size: 2.1rem;
-    font-size: 21px;
-  }
-  article .date p {
-    font-size:1.8rem;
-    font-size:18px;
-  }
-  article .meta a {
-    font-size:1.8rem;
-    font-size:18px;
-  }
-  .pullquote {
-    margin:1.5em 0;
-  }
-  .pullquote p {
-    font-family: 'Open Sans', sans-serif;
-    font-size:28px;
-    font-size:2.8rem;
-  }
-  .post-container .featured .title {
-    width:auto;
-    overflow:hidden;
-    font-size:1.8rem;
-  }
-  #footer-container ul {
+  .primary {
     margin:0 !important;
-    display:block;
   }
-  #footer-container p, ul {
-    text-align: center;
-    float:none !important;
-    display:block;
+  #mobile-header {
+    display: block;
+    width:90%;
   }
-}
-@media only screen and (min-device-width:320px) and (max-device-width:480px) {
-  body {
-    -webkit-overflow-scrolling: touch;
-    max-width:100%;
+  #mobile-header ol {
+    margin: 15px 10px 0;
   }
-  .title h1 {
-    width:auto;
-    font-size:3.8rem;
-  }
-  article .post-snippet {
-    display:none;
-  }
-  #footer-container {
-    width:100%;
-    position:relative;
-  }
-  #footer-container ul {
-    margin:0 !important;
-    display:block;
-  }
-  #footer-container p, ul {
-    text-align:center;
-    float: none !important;
-    display:block;
+  #mobile-header ol li {
+    list-style: none;
+    display:inline;
+    padding:25px;
+    text-transform: uppercase;
   }
 }

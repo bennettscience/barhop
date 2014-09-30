@@ -62,3 +62,9 @@
 	<p>Powered by <a href="http://www.anchorcms.com">Anchor</a> and <a href="https://github.com/TSCBennett/barhop">Barhop</a>.</p>
       </div>
     </div><!-- sidebar -->
+    <div id="mobile-header">
+      <ol class="mobile-menu">
+	<li><a href="<?php echo theme_url(); ?>">Home</a></li>
+	<li><a href="<?php echo search_url(); ?>">Search</a></li>
+      </ol>
+    </div>

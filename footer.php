@@ -1,6 +1,5 @@
     <!-- jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    
     <script type="text/javascript">
 	  // removes the CSS formatting for the featured image background URL
       function extractUrl(input) {
