@@ -22,6 +22,12 @@
                         <a href="<?php echo article_url(); ?>"><img src="<?php echo theme_url('assets/permalink.png'); ?>" /></a>
                     </div>
                 </div>
+                <?php if(article_js()): ?>
+                        <script><?php echo article_js(); ?></script>
+                <?php endif; ?>
+                <?php if(article_css()): ?>
+                        <style><?php echo article_css(); ?></style>
+                <?php endif; ?>
             </article>
         </div>
         <?php if(comments_open()) : ?>
