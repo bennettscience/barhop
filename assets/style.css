@@ -950,4 +950,7 @@ input.site-search__search-term {
     padding:25px;
     text-transform: uppercase;
   }
+  #mobile-header ol li a {
+    color: #574257;
+  }
 }

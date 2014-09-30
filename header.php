@@ -64,7 +64,7 @@
     </div><!-- sidebar -->
     <div id="mobile-header">
       <ol class="mobile-menu">
-	<li><a href="<?php echo theme_url(); ?>">Home</a></li>
+	<li><a href="<?php echo base_url(); ?>">Home</a></li>
 	<li><a href="<?php echo search_url(); ?>">Search</a></li>
       </ol>
     </div>
