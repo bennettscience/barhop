@@ -65,6 +65,6 @@
     <div id="mobile-header">
       <ol class="mobile-menu">
 	<li><a href="<?php echo base_url(); ?>">Home</a></li>
-	<li><a href="<?php echo search_url(); ?>">Search</a></li>
+	<li><a href="<?php echo base_url('search'); ?>">Search</a></li>
       </ol>
     </div>

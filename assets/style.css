@@ -155,8 +155,7 @@ blockquote p {
   text-align: center;
 }
 .pullquote {
-    margin: 45px -100px;
-    border: 0;
+    padding: 25px;
     text-align:center;
     font-family:'Open Sans', sans-serif !important;
     font-size:28px;
@@ -436,7 +435,9 @@ header {
 }
 img {
   width:100%;
+  margin: 1.5em 0;
 }
+
 body {
   min-height:100%;
   -webkit-overflow-scrolling: touch;
@@ -490,7 +491,7 @@ article .bg-clear {
   position:relative;
   height: inherit;
   width: inherit;
-  background:rgba(235,235,235,0.50);
+  background:rgba(235,235,235,0.65);
 }
 article .the-content {
   position: relative;
@@ -639,7 +640,7 @@ article .meta p {
   height:auto;
 }
 .the-post .content-container {
-  width:90%;
+  width:100%;
   height: inherit;
 }
 .the-post .content-container h1 {
@@ -662,6 +663,7 @@ article .meta p {
   font-family:'Open sans',sans-serif !important;
   font-size:29px;
   font-weight:700;
+  margin:1.5em;
 }
 .share {
   height:24px;
@@ -805,94 +807,90 @@ input.site-search__search-term {
 #pagination .next-page {
   float: left;
 }
-.comments {
-  padding:50px;
-}
 .comment-form {
   max-width:650px;
   font-family:sans-serif;
-  margin: 0 auto;
+  margin-left:250px;
+  padding:3%;
 }
 .comment-form h2 {
   font-family:'Open Sans', 'Helvetica', sans-serif;
   font-weight:700;
 }
-.comment-form .input {
-  display:block;
-  margin:10px 0;
-  font-family:'Open Sans', sans-serif;
+#comment p {
+  float:left;
+  width: 48%;
+  margin-right: 4%;
+  margin-bottom: 10px;
+  text-indent: 0;
 }
-.comment-form input {
-  padding:0 !important;
+#comment label[for] {
+  display:none;
 }
-.comment-form .btn {
-  height:45px;
+#comment input, textarea {
   width:100%;
-  margin:0 auto;
-  padding:4px;
+  padding: 10px 0 10px 10px;
+  font-size: 15px;
+  font-weight: normal;
+  border: 1px solid rgba(22,36,54,0.2);
+  border-radius:4px;
+}
+#comment p + p {
+  margin-right:0;
+}
+#comment textarea {
+  min-height:150px;
+  max-height: 800px;
+  resize:vertical;
+}
+#comment p.textarea {
+  float:none;
+  width:100%;
+}
+#comment button {
+  display:block;
+  padding: 9px 18px;
+  background:#4e82ce;
+  color:#fff;
   border:none;
-  background-color:#404040;
-  color:rgb(235,235,235);
-  font-family:'Open Sans', sans-serif;
-  font-weight:700;
+  border-radius:5px;
   cursor:pointer;
+  font-size: 13px;
+  font-weight:700;
+  height:auto;
+  width:auto;
 }
 .commentlist {
-  margin:30px auto;
-  padding:0;
-  max-width:650px;
-}
-.comments p {
-  max-width:650px;
-  margin:0 auto;
-  font-family:'Open Sans','Arial','Helvetica',sans-serif;
-  color:#606060;
-  font-size:24px;
-  font-size:2.4rem;
+  margin-left:250px;
+  margin-top:2%;
+  padding:3%;
 }
 .comment {
-  max-width:650px;
   margin:10px auto;
 }
-.comment .wrap {
-  margin:0 auto;
-  border:1px solid #404040;
-  background:rgb(220,220,220);
-}
 .wrap #comment-name {
-  background:#404040;
-  color:rgb(235,235,235);
-  font-family:'Open Sans', sans-serif;
-  padding:10px;
-  font-weight:300;
+  padding:2px 10px;
   margin:0;
 }
-.comment .wrap .comment-content {
+.wrap .comment-content p {
+  margin:0.5em;
   font-size:18px;
-  padding:15px;
+  line-height:24px;
 }
 .counter {
-  width:100%;
   font-size:14px;
-  background:#707070;
+  border-bottom: 1px solid #707070;
 }
 .counter time {
   float:left;
   padding:0 10px;
 }
 .counter time a {
-  font-family: 'Open Sans', sans-serif;
-  font-size:14px;
-  font-size: 1.4rem;
-  color:rgb(220,220,220);
+  color:inherit;
 }
 .counter p {
   margin:0 10px;
   text-align:right;
-  font-family: 'Open Sans', sans-serif;
-  font-size:14px;
-  font-size: 1.4rem;
-  color:rgb(220,220,220);
 }
 .counter a {
   text-decoration:none;
@@ -934,8 +932,12 @@ input.site-search__search-term {
   .sidebar {
     display:none;
   }
-  .primary {
+  .primary,
+  .post-container {
     margin:0 !important;
+  }
+  .featured {
+    height:150px;
   }
   #mobile-header {
     display: block;
@@ -952,5 +954,9 @@ input.site-search__search-term {
   }
   #mobile-header ol li a {
     color: #574257;
+  }
+  .headline {
+    font-size:28px;
+    font-size:2.8rem;
   }
 }

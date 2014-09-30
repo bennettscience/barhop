@@ -28,19 +28,16 @@
         <div class="comments">
                 <form id="comment" class="comment-form" method="post" action="<?php echo comment_form_url(); ?>#comment">
                 <h2>Discussion</h2>
-                        <p class="input"><?php echo comment_form_notifications(); ?></p>
                         
-                        <p class="input"><?php echo comment_form_input_name('placeholder="Your name"'); ?></p>
+                        <p class="name"><?php echo comment_form_input_name('placeholder="Your name"'); ?></p>
                         
-                        <p class="input"><?php echo comment_form_input_email('placeholder="Your email (not published)"'); ?></p>
+                        <p class="email"><?php echo comment_form_input_email('placeholder="Your email (not published)"'); ?></p>
 
-                        <p class="input"><?php echo comment_form_input_text('placeholder="Leave your thoughts:"'); ?></p>
+                        <p class="textarea"><?php echo comment_form_input_text('placeholder="Leave your thoughts:"'); ?></p>
                         
-                        <?php echo comment_form_button(); ?>
+                        <p class="submit"><button class="btn" type="submit">Post Comment</button></p>
 
                 </form>
-                
-                <hr />
                 
                 <?php if(has_comments()) : ?>
                 <ul class="commentlist">
@@ -50,8 +47,7 @@
                                         <p id="comment-name"><?php echo comment_name(); ?></p>
                                         
                                         <div class="comment-content">
-                                                <?php echo comment_text(); ?>
-                                                <br />
+                                                <p><?php echo comment_text(); ?></p>
                                                 
                                         </div>
                                         
