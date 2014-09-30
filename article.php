@@ -25,9 +25,10 @@
             </article>
         </div>
         <?php if(comments_open()) : ?>
+        
         <div class="comments">
-                <form id="comment" class="comment-form" method="post" action="<?php echo comment_form_url(); ?>#comment">
                 <h2>Discussion</h2>
+                <form id="comment" class="comment-form" method="post" action="<?php echo comment_form_url(); ?>#comment">
                         
                         <p class="name"><?php echo comment_form_input_name('placeholder="Your name"'); ?></p>
                         

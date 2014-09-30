@@ -354,7 +354,6 @@ ol {
 }
 ul {
   list-style: none;
-  /* float: left; */
 }
 ol {
   list-style: decimal;
@@ -807,11 +806,13 @@ input.site-search__search-term {
 #pagination .next-page {
   float: left;
 }
+.comments {
+  margin-left:250px;
+  padding:3%;
+}
 .comment-form {
   max-width:650px;
   font-family:sans-serif;
-  margin-left:250px;
-  padding:3%;
 }
 .comment-form h2 {
   font-family:'Open Sans', 'Helvetica', sans-serif;
@@ -847,6 +848,10 @@ input.site-search__search-term {
   float:none;
   width:100%;
 }
+#comment p.submit {
+  float:none;
+  margin-bottom:25px;
+}
 #comment button {
   display:block;
   padding: 9px 18px;
@@ -855,15 +860,12 @@ input.site-search__search-term {
   border:none;
   border-radius:5px;
   cursor:pointer;
-  font-size: 13px;
   font-weight:700;
   height:auto;
   width:auto;
 }
-.commentlist {
-  margin-left:250px;
-  margin-top:2%;
-  padding:3%;
+ul.commentlist {
+  margin:0;
 }
 .comment {
   margin:10px auto;
@@ -958,5 +960,8 @@ input.site-search__search-term {
   .headline {
     font-size:28px;
     font-size:2.8rem;
+  }
+  .comments {
+    margin:0 !important;
   }
 }
