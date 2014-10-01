@@ -13,6 +13,7 @@
       
 	    function extractPhotoId() {
 	      photoId = bg.replace(/(.+\.[a-z]{2,4})\/(\d{3,5})\/(\d{7,15})(?:(?!ab).)*/ig, '$3')
+	      /* photoId = bg.replace(/(.+\.[a-z]{2,4}\/\d{3,5})\/(\d{7,15})*ig, '$2') */
 	    }
 	    	console.log(bg);
 	    	console.log(photoId);

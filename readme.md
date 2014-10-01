@@ -33,7 +33,7 @@ Barhop uses featured images to give a clean, modern look to your blog, but it mu
    - Paste an image source URL into the Featured Image field.
    - Images can be static *or* animated GIFs.
 
-**If you do not set a featured image, a random color will be applied to the Home page and the post header.**
+**If you do not set up a featured image, or don't set an image, a random color will be applied to the Home page and the post header.**
 
 ### Twitter
 Anchor CMS is so light because it comes completely unconfigured.
