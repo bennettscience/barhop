@@ -30,7 +30,11 @@
                 <?php endif; ?>
             </article>
         </div>
-        <?php if(comments_open()) : ?>
+        <?php if (comments_open()): ?>
+            <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+            <?php theme_include('anchor-comments/anchor-comments'); ?>
+        <?php endif; ?>
+        <!-- <?php if(comments_open()) : ?>-->
         
         <div class="comments">
                 <h2>Discussion</h2>
