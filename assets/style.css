@@ -754,8 +754,37 @@ article .meta p {
   position:relative;
   margin-bottom:100px;
 }
+.sidebar ul {
+  width:100%;
+  height:auto;
+  margin:0 auto;
+}
 .sidebar .page-menu ul li a {
   font-family:'Open Sans', sans-serif;
+}
+#cat {
+  display:block;
+  position:relative;
+  width:100%;
+  height:34px;
+  overflow:hidden;
+  background-image:url('assets/down.png');
+  background-repeat:no-repeat;
+  background-position:right;
+  background:#eee;
+  border-radius:3px;
+}
+#cat select {
+  background:transparent;
+  color:#404040;
+  width:100%;
+  padding:5px;
+  font-size:16px;
+  line-height:1;
+  border:2px solid #eee;
+  border-radius:3px;
+  height:34px;
+  -webkit-appearance:none;
 }
 .site-search {
   padding:0 10px;
@@ -780,15 +809,6 @@ input.site-search__search-term {
   font-size:1.8rem;
   font-weight:300;
   color:#848383;
-}
-.sidebar #cat {
-  display:block;
-  position:relative;
-}
-.sidebar ul {
-  width:100%;
-  height:auto;
-  margin:0 auto;
 }
 .list-item {
   font-size:22px;
