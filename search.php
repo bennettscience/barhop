@@ -7,8 +7,10 @@
 		  <?php while(search_results()) : ?>
 			<?php if(article_custom_field('featured-image')): ?>
 			      <article class="post" style="background:url('<?php echo article_custom_field('featured-image') ?>') center center no-repeat;background-size:cover;">
-			<?php else: ?>
-			      <article class="post">
+			<?php elseif(article_custom_field('featured-color')) : ?>
+			      <article class="post" id="<?php echo article_id(); ?>" style="background-color:<?php echo article_custom_field('featured-color') ?>">
+			<?php else : ?>
+			      <article class="post" id="<?php echo article_ID(); ?>">
 			<?php endif; ?>
 				    <div class="bg-clear">
 				          <div class="the-content">
