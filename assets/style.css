@@ -782,6 +782,9 @@ article .meta p {
 .sidebar .page-menu ul li a:hover {
   background-color:#0d597e;
 }
+.active {
+  background-color:#0d597e;
+}
 #cat {
   display:block;
   position:relative;
