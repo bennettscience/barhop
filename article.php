@@ -18,10 +18,10 @@
             </div> <!-- featured image -->
             <article class="the-post">
                 <div class="content-container">
+                        <p>Posted on <?php echo article_date(); ?> in <a href="<?php echo article_category_url(); ?>"><?php echo article_category(); ?></a></p>
                 
-                    <p><?php echo article_markdown(); ?></p>
+                        <p><?php echo article_markdown(); ?></p>
                     <div class="share">
-                        <p><?php echo article_date(); ?> | <a href="<?php echo article_category_url(); ?>"><?php echo article_category(); ?></a></p>
                         <a onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" href="http://www.twitter.com/share?url=<?php echo article_url(); ?>&text=<?php echo article_title(); ?><?php if(site_meta('twitter_account')) : ?>&via=<?php echo site_meta('twitter_account') ?><?php endif; ?>"><img src="<?php echo theme_url('assets/twitter.png'); ?>" /></a>
                         <a href="<?php echo article_url(); ?>"><img src="<?php echo theme_url('assets/permalink.png'); ?>" /></a>
                     </div>

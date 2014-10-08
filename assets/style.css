@@ -652,6 +652,7 @@ article .meta p {
 .the-post .content-container {
   width:100%;
   height: inherit;
+  margin-top:2%;
 }
 .the-post .content-container h1 {
   text-decoration:none;
@@ -668,6 +669,9 @@ article .meta p {
   font-size: 1.8rem;
   font-weight:300;
   color:#000;
+}
+.the-post .content-container a:hover {
+  text-decoration:underline;
 }
 .the-post .content-container .pullquote p{
   font-family:'Open sans',sans-serif !important;
@@ -985,6 +989,11 @@ ul.commentlist {
   }
   .featured {
     height:150px;
+  }
+  .featured .title h1{
+    font-size:28px;
+    font-size:2.8rem;
+    line-height:1.25;
   }
   #mobile-header {
     display: block;
