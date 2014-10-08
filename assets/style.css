@@ -761,6 +761,11 @@ article .meta p {
 }
 .sidebar .page-menu ul li a {
   font-family:'Open Sans', sans-serif;
+  display:block;
+  padding:4px;
+}
+.sidebar .page-menu ul li a:hover {
+  background-color:#0d597e;
 }
 #cat {
   display:block;
