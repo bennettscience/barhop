@@ -44,6 +44,8 @@
 	    else { return }
       });
       
+      $("#cat select").val(location.pathname);
+      
     </script>
   </body>
 </html>
