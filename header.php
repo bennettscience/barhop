@@ -42,7 +42,7 @@
 	  </form>
 	  <div id="cat">
 	    <select onchange="location = this.options[this.selectedIndex].value;">
-	      <option>Select a category</option>
+	      <!-- <option selected="selected">Select a category</option> -->
 	      <?php while(categories()) : ?>
 	      <option value="<?php echo category_url(); ?>"><?php echo category_title(); ?> (<?php echo category_count(); ?>)</option>
 	      <?php endwhile; ?>

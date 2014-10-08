@@ -22,7 +22,7 @@
 	    console.log(apiUrl);
       
 	    $.getJSON(apiUrl, function(data){
-	        $("#credits").html('<a href="http://www.flickr.com/photos/'+data.photo.owner.nsid+'/'+data.photo.id+'/" target="blank">'+data.photo.title._content+"</a>");
+	        $("#credits").html('<a href="http://www.flickr.com/photos/'+data.photo.owner.nsid+'/'+data.photo.id+'/" target="blank">'+data.photo.title._content+ ' by ' +data.photo.owner.username+"</a>");
 	    });
       })
       
@@ -44,7 +44,7 @@
 	    else { return }
       });
       
-      $("#cat select").val(location.pathname);
+      $("#cat select").val(location.pathname)
       
     </script>
   </body>

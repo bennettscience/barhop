@@ -600,7 +600,7 @@ article .meta p {
   padding:3%;
 }
 .featured {
-  height:450px;
+  height:250px;
   width:100%;
   background-size:cover;
   background-position: center center;
@@ -614,12 +614,12 @@ article .meta p {
   height:auto;
   width:auto;
   background:#a7a7a7;
-  padding:3px;
+  padding:2px;
 }
 .featured #featured-credit a {
   position:relative;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 12px;
+  line-height: 1;
   margin: 0 auto;
   color:#eee;
   font-family: sans-serif;
@@ -788,7 +788,7 @@ article .meta p {
   margin-bottom:35px;
   border-radius:3px;
   border:1px solid black;
-  background-color: #fff;
+  background-color: #eee;
 }
 input.site-search__search-term {
   -webkit-appearance:none;
@@ -806,6 +806,7 @@ input.site-search__search-term {
   font-size:1.8rem;
   font-weight:300;
   color:#848383;
+  background:transparent;
 }
 .list-item {
   font-size:22px;
