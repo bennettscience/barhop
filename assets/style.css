@@ -768,11 +768,8 @@ article .meta p {
   width:100%;
   height:34px;
   overflow:hidden;
-  background:url('assets/down.png') no-repeat right #eee;
- /* background-repeat:no-repeat;
-  background-position:right;
-  background:#eee; */
-  border-radius:3px;
+  background:url('http://localhost:8888/anchor/themes/barhop/assets/down.png') no-repeat right #eee;
+  border-radius: 3px;
 }
 #cat select {
   background:transparent;
@@ -781,7 +778,7 @@ article .meta p {
   padding:5px;
   font-size:16px;
   line-height:1;
-  border:2px solid #eee;
+  border:none;
   border-radius:3px;
   height:34px;
   -webkit-appearance:none;
