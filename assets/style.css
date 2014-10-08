@@ -786,7 +786,17 @@ article .meta p {
   border:none;
   border-radius:3px;
   height:34px;
-  -webkit-appearance:none;
+  appearance: none;
+  -webkit-appearance:none !important;
+  -o-appearance:none;
+}
+@-moz-document url-prefix() {
+  #cat {
+    background:#eee;
+  }
+  #cat select {
+    background:none !important;
+  }
 }
 .site-search {
   padding:0 10px;

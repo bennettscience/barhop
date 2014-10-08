@@ -44,7 +44,11 @@
 	    else { return }
       });
       
+      /* Dropdown functions */
       $("#cat select").val(location.pathname)
+      if ($.browser.mozilla) {
+	    $("#cat select").css('background', '0')
+      };
       
     </script>
   </body>
