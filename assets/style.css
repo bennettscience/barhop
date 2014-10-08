@@ -486,19 +486,16 @@ article {
   background-repeat: no-repeat;
   background-size:cover;
 }
-article .bg-clear {
-  position:relative;
-  height: inherit;
-  width: inherit;
-  background:rgba(235,235,235,0.65);
-}
 article .the-content {
+  margin:0 auto;
+  max-width: 80%;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
+  background:rgba(235,235,235,0.5);
 }
 article .the-content p {
   color:#574257;
@@ -624,6 +621,20 @@ article .meta p {
   color:#eee;
   font-family: sans-serif;
   text-decoration: none;
+}
+.featured .title {
+  max-width: 80%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  background: rgba(235,235,235,0.5); */
+  padding: 10px 3px;
+}
+.featured .title h1 {
+  text-transform: uppercase;
+  font-family:'Open Sans', 'Helvetica','Arial',sans-serif;
+  font-weight:800;
 }
 .post-meta {
   margin:15px auto;

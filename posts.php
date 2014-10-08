@@ -10,7 +10,6 @@
 		  <?php else : ?>
 			<article class="post" id="<?php echo article_ID(); ?>">
 		  <?php endif; ?>
-			      <div class="bg-clear">
 				    <div class="the-content">
 					  <div class="date">
 						<p><?php echo article_date(); ?></p>
@@ -29,7 +28,6 @@
 						      </ul>
 						</div><!-- meta -->
 				    </div><!-- content -->
-			      </div><!-- -bg-clear -->
 			</article><!-- post -->
 	    <?php endwhile; ?>
 	    <?php if(has_pagination()) : ?>
