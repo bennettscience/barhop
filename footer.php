@@ -1,6 +1,16 @@
     <!-- jQuery -->
     <script type="text/javascript">
 	  // removes the CSS formatting for the featured image background URL
+      $(document).ready(function(){
+	    var current = window.location.href;
+	    $('.page-menu li > a').each(function(){
+		  if($(this).attr('href').indexOf(current) !==-1){
+			$(this).addClass('active');
+			console.log(current + ' ' + $(this).attr('href'));
+		  }
+	    })
+      })
+      
       $('featured').ready(function(){
 	    function extractUrl(input) {
 		  return input.replace(/"/g,"").replace(/url\(|\)$/ig, "");
@@ -43,30 +53,6 @@
 	    }
 	    else { return }
       });
-      
-      /* Dropdown functions */
-      $("#cat select").val(location.pathname)
-      
-      /* Check for active page and style the menu 
-      $(document).ready(function() {
-	    var current = window.location.href;
-	    $(".page-menu a").each(function() {
-		  var $this = $(this);
-		  if ($this.attr('href').indexOf(current) !== -1) {
-			$this.addClass('active');
-		  }
-	    });
-      });*/
-      
-      $(function() {
-	    var url = window.location.href;
-	    var urlRegExp = new RegExp(url.replace(/\/$/,''));
-	    $('.page-menu a').each(function() {
-		  if (urlRegExp.test(this.href)) {
-			$(this).addClass('active');
-		  }
-	    })
-      })
       
     </script>
   </body>
