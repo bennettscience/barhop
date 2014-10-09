@@ -17,7 +17,7 @@
   <body>
     <div class="sidebar">
       <div id="blog-title">
-	<a href="<?php echo base_url(); ?>" title="home"><?php echo site_name(); ?></a>
+	<a href="<?php echo base_url('posts'); ?>" title="home"><?php echo site_name(); ?></a>
       </div>
         <div role="navigation" id="menu">
 	  <?php if(has_menu_items()) : ?>
