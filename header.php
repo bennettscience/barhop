@@ -24,7 +24,7 @@
 	  <div class="page-menu">
 	    <ul>
 	      <?php while(menu_items()) : ?>
-	      <li class="list-item"><a href="<?php echo menu_url('include-in-menu'); ?>" title="<?php echo menu_title(); ?>"><?php echo menu_name(); ?></a></li>
+	      <li class="list-item"><a href="<?php echo menu_url('include-in-menu'); ?>" title="<?php echo menu_title(); ?>" class="<?php echo menu_active() ? 'active' : '' ?>"><?php echo menu_name(); ?></a></li>
 	      <?php endwhile; ?>
 	    </ul>
 	  </div>  
