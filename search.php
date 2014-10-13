@@ -12,26 +12,24 @@
 			<?php else : ?>
 			      <article class="post" id="<?php echo article_ID(); ?>">
 			<?php endif; ?>
-				    <div class="bg-clear">
 				          <div class="the-content">
 						<div class="date">
 						      <p><?php echo article_date(); ?></p>
-						</div> <!-- date -->
+						</div> 
 					  <div class="title">
 					  	  <a class="headline" href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
-					  </div> <!-- title -->
+					  </div> 
 	      
 					  <div class="post-snippet">
 						<p><?php echo article_description(); ?></p> 
-					  </div> <!-- post-snippet  -->
+					  </div> 
 					  <div class="meta">
 						<ul>
 						      <a href="<?php echo article_category_url(); ?>" class="categories"><?php echo article_category(); ?></a> 
 						</ul>
-					  </div><!-- meta -->
-					  </div><!-- content -->
-				    </div><!-- -bg-clear -->
-			      </article><!-- post -->
+					  </div>
+					  </div>
+			      </article>
 		  <?php endwhile; ?>
 	    <?php else: ?>
 		  <div class="search-featured">
