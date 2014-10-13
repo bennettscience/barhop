@@ -30,7 +30,7 @@ $("img").each(function() {
 			// Put a credit after the image using the JSON data
 			var $this = $(this);
 			$.getJSON(apiUrl, function(data){
-			      $this.after('<a href="http://www.flickr.com/photos/'+data.photo.owner.nsid+'/'+data.photo.id+'/">'+data.photo.title._content+ ' by ' +data.photo.owner.username+'</a>');
+			      $this.after('<a class="small" href="http://www.flickr.com/photos/'+data.photo.owner.nsid+'/'+data.photo.id+'/">'+data.photo.title._content+ ' by ' +data.photo.owner.username+'</a>');
 			})
 		  }
 	    })

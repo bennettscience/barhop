@@ -434,7 +434,7 @@ header {
 }
 img {
   width:100%;
-  margin: 1.5em 0;
+  margin:0;
 }
 
 body {
@@ -668,6 +668,10 @@ article .meta p {
   font-size: 1.8rem;
   font-weight:300;
   color:#000;
+}
+.small {
+  font-size:1.3rem;
+  font-size:13px;
 }
 .the-post .content-container a:hover {
   text-decoration:underline;
