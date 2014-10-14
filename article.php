@@ -22,8 +22,8 @@
                 
                         <p><?php echo article_markdown(); ?></p>
                     <div class="share">
-                        <a onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" href="http://www.twitter.com/share?url=<?php echo article_url(); ?>&text=<?php echo article_title(); ?><?php if(site_meta('twitter_account')) : ?>&via=<?php echo site_meta('twitter_account') ?><?php endif; ?>"><img src="<?php echo theme_url('assets/twitter.png'); ?>" /></a>
-                        <a href="<?php echo article_url(); ?>"><img src="<?php echo theme_url('assets/permalink.png'); ?>" /></a>
+                        <a onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" href="http://www.twitter.com/share?url=<?php echo article_url(); ?>&text=<?php echo article_title(); ?><?php if(site_meta('twitter_account')) : ?>&via=<?php echo site_meta('twitter_account') ?><?php endif; ?>"><img src="<?php echo theme_url('assets/img/twitter.png'); ?>" /></a>
+                        <a href="<?php echo article_url(); ?>"><img src="<?php echo theme_url('assets/img/permalink.png'); ?>" /></a>
                     </div>
                 </div>
                 <?php if(article_js() | article_css()): ?>
@@ -32,10 +32,6 @@
                 <?php endif; ?>
             </article>
         </div>
-        <?php if (comments_open()): ?>
-            <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
-            <?php theme_include('anchor-comments/anchor-comments'); ?>
-        <?php endif; ?>
         <!-- <?php if(comments_open()) : ?>-->
         
         <div class="comments">
