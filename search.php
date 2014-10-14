@@ -32,7 +32,7 @@
 			      </article>
 		  <?php endwhile; ?>
 	    <?php else: ?>
-		  <div class="featured">
+		  <div class="featured" style="background-image:url(https://farm6.staticflickr.com/5056/5421517469_d0d2997eec_b.jpg);height:550px;">
 			<div class="title">
 			      <h1>Sorry, nothing matched. Try again?</h1>
 			</div>
