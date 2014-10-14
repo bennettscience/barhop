@@ -558,14 +558,11 @@ article .meta p {
   margin:0;
 }
 .post-container {
-  position:relative;
-  height:auto;
   margin-left:250px;
   padding:3%;
 }
 .featured {
   height:250px;
-  width:100%;
   background-size:cover;
   background-position: center center;
   background-repeat:no-repeat;
@@ -583,7 +580,6 @@ article .meta p {
 .featured #featured-credit a {
   font-size: 12px;
   color:#eee;
-  font-family: sans-serif;
 }
 .featured .title {
   max-width: 80%;
@@ -607,14 +603,8 @@ article .meta p {
   margin:0;
   padding:0;
 }
-.the-post {
-  width:100%;
-  background: #fff;
-  height:auto;
-}
+
 .the-post .content-container {
-  width:100%;
-  height: inherit;
   margin-top:2%;
 }
 .the-post .content-container h1 {
@@ -647,19 +637,13 @@ article .meta p {
   margin:1.5em;
 }
 .share {
-  height:24px;
-  width:80%;
+  width:50%;
 }
 .meta #article p {
   font-family:'Merriweather','Helvetica',sans-serif;
   font-size:14px;
   font-size:1.4rem;
   text-align:left;
-}
-.share p {
-  margin:0;
-  padding:0;
-  float:left;
 }
 .share img {
   height:24px;
@@ -807,7 +791,6 @@ input.site-search__search-term {
 }
 .comment-form {
   max-width:650px;
-  font-family:sans-serif;
 }
 .comment-form h2 {
   font-family:'Open Sans', 'Helvetica', sans-serif;
@@ -872,7 +855,7 @@ ul.commentlist {
 .wrap .comment-content p {
   margin:0.5em;
   font-size:18px;
-  line-height:24px;
+  line-height:1.25;
 }
 .counter {
   font-size:14px;
