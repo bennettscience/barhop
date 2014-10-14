@@ -2,9 +2,9 @@
 <div name="post">
         <div class="post-container">
             <?php if(page_custom_field('page-featured-image')) : ?>
-            <div class="page-featured" style="background:url('<?php echo page_custom_field('page-featured-image')?>') center center no-repeat; background-size:cover;position:relative;" >
+            <div class="featured" style="background:url('<?php echo page_custom_field('page-featured-image')?>') " >
             <?php else: ?>
-            <div class="page-featured" style="height:250px;">
+            <div class="featured" id="<?php echo page_id(); ?>">
             <?php endif; ?>
                 <div class="title">
                     <h1><?php echo page_title($fallback=''); ?></h1>

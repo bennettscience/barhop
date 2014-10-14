@@ -6,7 +6,7 @@
 	    <?php if(has_search_results()) : ?>
 		  <?php while(search_results()) : ?>
 			<?php if(article_custom_field('featured-image')): ?>
-			      <article class="post" style="background:url('<?php echo article_custom_field('featured-image') ?>') center center no-repeat;background-size:cover;">
+			      <article class="post" style="background:url('<?php echo article_custom_field('featured-image') ?>')">
 			<?php elseif(article_custom_field('featured-color')) : ?>
 			      <article class="post" id="<?php echo article_id(); ?>" style="background-color:<?php echo article_custom_field('featured-color') ?>">
 			<?php else : ?>
@@ -32,20 +32,9 @@
 			      </article>
 		  <?php endwhile; ?>
 	    <?php else: ?>
-		  <div class="search-featured">
+		  <div class="featured">
 			<div class="title">
-			      <p>Sorry, nothing matched. Try again?</p>
-			      <form class="site-search" action="<?php echo search_url(); ?>" method="post">
-				<input type="search" class="site-search__search-term" name="term" placeholder="Search..." value>
-					<div id="text-field-container" pseudo="-webkit-texfield-decoration-container">
-					<div id="decoration"></div>
-					<div id="editing-view-port">
-						<div id="inner-editor"></div>
-					</div>
-					<div pseudo="-webkit-search-cancel-button" id="clear" style="opacity: 0;pointer-events:none;"></div>
-					</div>
-				</input>
-			</form>
+			      <h1>Sorry, nothing matched. Try again?</h1>
 			</div>
 		  </div>
 	    <?php endif; ?>
