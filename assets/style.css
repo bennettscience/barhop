@@ -1,10 +1,10 @@
 /*
 Theme Name: Barhop
-Theme URI: https://github.com/TSCBennett/barhop
+Theme URI: https://github.com/bennettscience/barhop
 Author: Brian Bennett
-Author URI: http://www.brianbennett.org/blog
+Author URI: http://www.ohheybrian.com
 Description: Bars and Images
-Version: 1.0
+Version: 1.1
 License: GNU General Public License
 
 
@@ -366,7 +366,7 @@ ol ul {
   margin-left: 1.5em;
 }
 li {
-  font-family:'Open Sans',sans-serif !important;
+  font-family:'Merriweather',serif !important;
   font-weight:300;
   font-size:22px;
   font-size:2.2rem;
@@ -447,7 +447,6 @@ body .primary {
   position:relative;
 }
 body #content {
-  height: auto;
   position:relative;
   margin:0 auto;
   max-width: 90%;
@@ -456,7 +455,6 @@ body #content {
 #blog-title {
   padding:5px;
   margin-bottom:15px;
-  height:auto;
   text-align:center;
 }
 #blog-title a{
@@ -471,15 +469,9 @@ body #content {
   font-family:'Merriweather','Helvetica', sans-serif;
 }
 article {
-  /* background: transparent; */
   padding:0;
-  display: block;
-  opacity:1;
-  height:100%;
 }
 .post {
-  position: inherit;
-  max-height: 400px;
   height: 250px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -501,20 +493,14 @@ article .the-content p {
   line-height:1.25;
 }
 .title {
-  display:block;
-  max-width: 80%;
-  margin: 0 auto;
-  position: relative;
-  top: 10%;
+  margin:0 auto;
   transform: translateY(-10%);
   -webkit-transform: translateY(-10%);
   font-size: 36px;
   font-size:3.8rem;
-  font-weight:700;
   text-align: center;
 }
 article .title a {
-  text-decoration:none;
   color: #404040;
   line-height:1.25;
   font-family:'Open Sans','Arial',sans-serif;
@@ -523,12 +509,6 @@ article .title a {
 }
 article .title a:hover {
   color:#3849A6;
-}
-article .date {
-  width:inherit;
-  height:auto;
-  position:relative;
-  top: 22%;
 }
 article .date p {
   font-size: 18px;
@@ -557,12 +537,9 @@ article .post-snippet p {
   margin:0;
 }
 article .meta {
-  display: block; 
-  max-width:inherit;
-  margin: 0 auto;
-  position: relative;
-  top: 10%;
+  font-size: 14px;
   text-align: center;
+  width: 100%;
 }
 article .meta a {
   color:#404040;
@@ -579,15 +556,6 @@ article .meta p {
   font-weight:300;
   font-size:21px;
   margin:0;
-}
-.meta {
-  font-size: 14px;
-  text-align: center;
-  width: 100%;
-}
-.meta a {
-  color: #888888;
-  text-decoration: none;
 }
 .post-container {
   position:relative;
@@ -613,13 +581,9 @@ article .meta p {
   padding:2px;
 }
 .featured #featured-credit a {
-  position:relative;
   font-size: 12px;
-  line-height: 1;
-  margin: 0 auto;
   color:#eee;
   font-family: sans-serif;
-  text-decoration: none;
 }
 .featured .title {
   max-width: 80%;
@@ -766,17 +730,11 @@ article .meta p {
   color: #eeffee;  
 }
 .sidebar .page-menu {
-  height:auto;
-  width:100%;
-  display:block;
-  position:relative;
   margin-bottom:10px;
   font-size:18px;
   font-size:1.8rem;
 }
 .sidebar ul {
-  width:100%;
-  height:auto;
   margin:0 auto;
 }
 .sidebar .page-menu ul li a {
@@ -790,28 +748,8 @@ article .meta p {
 .active {
   background-color:#0d597e;
 }
-#cat {
-  display:block;
-  position:relative;
-  width:100%;
-  height:30px;
-  overflow:hidden;
-  background:url('down.png') no-repeat right #eee;
-  border-radius: 3px;
-}
 #cat select {
-  background:transparent;
-  color:#404040;
-  width:100%;
-  padding:5px;
-  font-size:16px;
-  line-height:1;
-  border:none;
-  border-radius:3px;
   height:28px;
-  appearance: none;
-  -webkit-appearance:none !important;
-  -o-appearance:none;
 }
 @-moz-document url-prefix() {
   #cat {
@@ -958,9 +896,6 @@ ul.commentlist {
   color:rgb(220,220,220);
 }
 #dev-info {
-  height:75px;
-  background:transparent;
-  text-align: left;
   position:absolute;
   top:80%;
   padding:0 20px;
@@ -971,10 +906,6 @@ ul.commentlist {
   font-weight:300;
   font-size:14px;
   font-size:1.4rem;
-}
-#dev-info ul {
-  display:inline;
-  list-style:none;
 }
 #dev-info ul li {
   display:inline;
