@@ -1,11 +1,7 @@
 <?php theme_include('header'); ?>
 <div name="404">
         <div class="post-container">
-            <?php if(page_custom_field('page-featured-image')) : ?>
-            <div class="page-featured" style="background:url('<?php echo page_custom_field('page-featured-image')?>') center center no-repeat; background-size:cover;position:relative;" >
-            <?php else: ?>
-            <div class="page-featured" style="height:250px;">
-            <?php endif; ?>
+            <div class="featured" style="background-image:url('https://farm6.staticflickr.com/5056/5421517469_d0d2997eec_b.jpg');height:450px;" >
                 <div class="title">
                     <h1>Sorry, that doesn't exist</h1>
                 </div>
