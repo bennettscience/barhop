@@ -8,7 +8,7 @@ $('.featured').ready(function(){
 	    extractPhotoId();
       
 	    function extractPhotoId() {
-		  photoId = bg.replace(/(.+\.[a-z]{2,4})\/(\d{3,5})\/(\d{7,15})(?:(?!ab).)*/ig, '$3')
+		  photoId = bg.replace(/(.+\.[a-z]{2,4})\/(\d{1,5})\/(\d{7,15})(?:(?!ab).)*/ig, '$3')
 	    }
       
 	    var apiUrl = "https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=c8c95356e465b8d7398ff2847152740e&photo_id=" + photoId + "&format=json&jsoncallback=?";
@@ -24,7 +24,7 @@ $("img").each(function() {
 		  // If "flickr.com" is in the URL, run the function
 		  if (!/flickr\.com$/i.test(imgSrc)) {
 			// Get the photo ID from the src
-			photoId = imgSrc.replace(/(.+\.[a-z]{2,4})\/(\d{3,5})\/(\d{7,15})(?:(?!ab).)*/ig, '$3');
+			photoId = imgSrc.replace(/(.+\.[a-z]{2,4})\/(\d{1,5})\/(\d{7,15})(?:(?!ab).)*/ig, '$3');
 			//Call the Flicmr API to get the photo info as JSON
 			var apiUrl = "https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=c8c95356e465b8d7398ff2847152740e&photo_id=" + photoId + "&format=json&jsoncallback=?";
 			// Put a credit after the image using the JSON data
