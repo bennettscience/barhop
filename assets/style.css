@@ -529,8 +529,8 @@ article .post-snippet {
   text-align: center;
 }
 article .post-snippet p {
-  font-size:22px;
-  font-size:2.15rem;
+  font-size:18px;
+  font-size:1.8rem;
   font-family:'Open Sans','Arial', sans-serif;
   font-weight:300;
   text-transform: none;
@@ -862,6 +862,13 @@ ul.commentlist {
   font-size:1.4rem;
 }
 /* ---------- Media queries are for lovers ------------------ */
+@media screen and (max-width: 1028px) {
+  .headline {
+    font-size:28px;
+    font-size:2.8rem;
+    line-height:1.25;
+  }
+}
 @media screen and (max-width: 768px) {
   .sidebar {
     display:none;
