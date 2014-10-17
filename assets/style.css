@@ -866,6 +866,10 @@ ul.commentlist {
     font-size:2.8rem;
     line-height:1.25;
   }
+  .title h1 {
+    font-size:36px;
+    font-size: 3.6rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .sidebar {
@@ -898,6 +902,7 @@ ul.commentlist {
   }
   #mobile-header ol li a {
     color: #574257;
+    font-family:'Open Sans','Helvetica','Arial',sans-serif;
   }
   .pagination {
     font-size:24px;
@@ -924,5 +929,13 @@ ul.commentlist {
   .headline .title {
     line-height:1;
     vertical-align: middle;
+  }
+  .featured .title h1{
+    font-size:22px;
+    font-size:2.2rem;
+  }
+  .content h2 {
+    font-size:19px;
+    font-size:1.9rem;
   }
 }
