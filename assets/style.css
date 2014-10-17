@@ -636,6 +636,8 @@ article .meta p {
 }
 .share {
   width:50%;
+  height:24px;
+  margin-bottom: 1.5em;
 }
 .meta #article p {
   font-family:'Merriweather','Helvetica',sans-serif;
@@ -814,7 +816,6 @@ ul.commentlist {
   margin:0.5em;
   font-size:15px;
   font-size:1.5rem;
-  line-height:1.25;
 }
 .counter {
   font-size:14px;
@@ -937,5 +938,8 @@ ul.commentlist {
   .content h2 {
     font-size:19px;
     font-size:1.9rem;
+  }
+  .comment-form {
+    max-width: 90%;
   }
 }
