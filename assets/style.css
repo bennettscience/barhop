@@ -618,8 +618,8 @@ article .meta p {
 }
 .the-post .content-container p {
   font-family:'Merriweather', sans-serif;
-  font-size:18px;
-  font-size: 1.8rem;
+  font-size:15px;
+  font-size: 1.5rem;
   font-weight:300;
   color:#000;
 }
@@ -641,8 +641,8 @@ article .meta p {
 }
 .meta #article p {
   font-family:'Merriweather','Helvetica',sans-serif;
-  font-size:14px;
-  font-size:1.4rem;
+  font-size:15px;
+  font-size:1.5rem;
   text-align:left;
 }
 .share img {
@@ -814,7 +814,8 @@ ul.commentlist {
 }
 .wrap .comment-content p {
   margin:0.5em;
-  font-size:18px;
+  font-size:15px;
+  font-size:1.5rem;
   line-height:1.25;
 }
 .counter {
