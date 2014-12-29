@@ -49,7 +49,7 @@ Anchor is a work in progress, currently on version 0.9. I'm working on building 
 
 ## Credits
 
-This theme is built for [Anchor CMS](http://www.anchorcms.com) and uses the [jPanelMenu](http://jpanelmenu.com) library.
+This theme is built for [Anchor CMS](http://www.anchorcms.com).
 
 ## License
 
