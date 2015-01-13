@@ -1,0 +1,944 @@
+/*
+Theme Name: Barhop
+Theme URI: https://github.com/bennettscience/barhop
+Author: Brian Bennett
+Author URI: http://www.ohheybrian.com
+Description: Bars and Images
+Version: 1.1
+License: GNU General Public License
+
+
+/* ----------------------------------------------------------- */
+/* Reset
+-------------------------------------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+  color:#333332;
+  /* height: 100%; */
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+blockquote p {
+  font-family:'Open Sans',sans-serif;
+  font-weight: 400;
+  font-size:28px;
+  color: #565656 !important;
+  text-align: center;
+}
+.pullquote {
+    padding: 25px;
+    text-align:center;
+    font-family:'Open Sans', sans-serif !important;
+    font-size:28px;
+    font-size:2.8rem;
+    font-weight: 700;
+}
+
+code,
+kbd,
+tt,
+var {
+  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  background-color:#ddd;
+  padding:5px;
+}
+
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  bottom: 1ex;
+}
+sub {
+  top: .5ex;
+}
+small {
+  font-size: 75%;
+}
+big {
+  font-size: 125%;
+}
+figure {
+  margin: 0;
+}
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+th {
+  font-weight: bold;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* Corrects font size not being inherited in all browsers */
+
+  margin: 0;
+  /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+
+  vertical-align: baseline;
+  *vertical-align: middle;
+  /* Improves appearance and consistency in all browsers */
+
+}
+button,
+input {
+  line-height: normal;
+  /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+
+  *overflow: visible;
+  /* Corrects inner spacing displayed oddly in IE6/7 */
+
+  -webkit-appearance: button;
+  /* Corrects inability to style clickable 'input' types in iOS */
+
+  font-size: 12px;
+  font-size: 1.4rem;
+  line-height: 1;
+  padding: 1.12em 1.5em 1em;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* Addresses appearance set to searchfield in S5, Chrome */
+
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+
+  border: 0;
+  padding: 0;
+}
+::-webkit-input-placeholder {
+  color:#848383;
+}
+::-moz-input-placeholder {
+  color:#848383;
+  opacity:1;
+}
+::-ms-input-placeholder {
+  color:#848383;
+}
+input[type=text],
+input[type=email],
+textarea {
+  color: #848383;
+  border: 1px solid #dddddd;
+  font-family:'Open Sans Pro', sans-serif;
+  font-weight:300;
+  width:100%;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+  color: #848383;
+}
+input[type=text],
+input[type=email] {
+  padding: 3px;
+}
+textarea {
+  overflow: auto;
+  /* Removes default vertical scrollbar in IE6/7/8/9 */
+
+  vertical-align: top;
+  /* Improves readability and alignment in all browsers */
+
+  max-width: 646px;
+  height:65px;
+}
+/* ------------------------- STYLES ------------------------------------- */
+body,
+button,
+input,
+select {
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  font-family: sans-serif;
+  line-height: 30px;
+  font-size: 15px;
+  font-size: 1.5rem;
+  height:22px;
+  width:100%;
+}
+
+/* -------------------------- TYPOGRAPHY ------------------------------------ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-family: "Merriweather", Georgia, serif;
+}
+h1 {
+  line-height: 71.03999999999999px;
+  font-size: 48px;
+  font-size: 4.8rem;
+}
+h2 {
+  line-height: 50.32px;
+  font-size: 34px;
+  font-size: 3.4rem;
+}
+h3 {
+  line-height: 41.44px;
+  font-size: 28px;
+  font-size: 2.8rem;
+}
+h4 {
+  line-height: 26.64px;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+hr {
+    height:0;
+    max-width:250px;
+    margin:1.5em auto;
+    border-top:1px solid rgba(0,0,0,0.1);
+    border-bottom:1px solid rgba(255,255,255,0.3);
+}
+p {
+  margin-bottom: 1.5em;
+}
+ul,
+ol {
+  margin: 0 0 1.5em 3em;
+}
+ul {
+  list-style: none;
+}
+ol {
+  list-style: decimal;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+li {
+  font-family:'Merriweather',serif !important;
+  font-weight:300;
+  font-size:22px;
+  font-size:2.2rem;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin: 0 1.5em 1.5em;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+blockquote {
+  margin: 0 1.5em;
+}
+address {
+  margin: 0 0 1.5em;
+}
+a {
+  color: #220dc5;
+  -webkit-transition: color 0.25s ease-in-out;
+  -moz-transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  -ms-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+  text-decoration: none;
+}
+a:focus,
+a:active {
+  color: rgba(0, 121, 152, 0.5);
+}
+/* ------------ ALIGNMENT ----------- */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ------ SITE STYLES -------- */
+header {
+  width:100%;
+  height:55px;
+  display:inline-block;
+}
+#mobile-header {
+  display:none;
+}
+img {
+  width:100%;
+  margin:0;
+}
+
+body {
+  min-height:100%;
+  -webkit-overflow-scrolling: touch;
+}
+body .primary {
+  max-width: 100%;
+  margin-left:250px;
+  position:relative;
+}
+body #content {
+  position:relative;
+  margin:0 auto;
+  max-width: 90%;
+  padding:3%;
+}
+#blog-title {
+  padding:5px;
+  margin-bottom:15px;
+  text-align:center;
+}
+#blog-title a{
+  text-transform:uppercase;
+  font-family: 'Open Sans','Helvetica',sans-serif;
+  font-size:3.8rem;
+  font-size:38px;
+  color:#eee;
+  font-weight:700;
+}
+article {
+  padding:0;
+}
+.post {
+  height: 250px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+article .the-content {
+  margin:0 auto;
+  max-width: 80%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  background:rgba(235,235,235,0.5);
+  padding:10px;
+}
+article .the-content p {
+  color:#574257;
+  line-height:1.25;
+}
+.title {
+  margin:0 auto;
+  font-size: 36px;
+  font-size:3.8rem;
+  text-align: center;
+  max-width:80%;
+}
+article .title a {
+  color: #404040;
+  line-height:1;
+  font-family:'Open Sans','Arial',sans-serif;
+  font-weight:800;
+  text-transform:uppercase;
+}
+article .title a:hover {
+  color:#3849A6;
+}
+article .date p {
+  font-size: 18px;
+  color: #404040;
+  font-family:'Open Sans','Helvetica',sans-serif;
+  font-weight:300;
+  text-align:center;
+  margin:0;
+}
+article .post-snippet {
+  display:block;
+  max-width: 80%;
+  height: auto;
+  position: relative;
+  top:10%;
+  margin:0 auto;
+  text-align: center;
+}
+article .post-snippet p {
+  font-size:18px;
+  font-size:1.8rem;
+  font-family:'Open Sans','Arial', sans-serif;
+  font-weight:300;
+  text-transform: none;
+  margin:0;
+}
+article .meta {
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
+article .meta a {
+  color:#404040;
+  font-family:'Open Sans','Helvetica',sans-serif;
+  font-weight:300;
+}
+article .meta ul {
+  margin: 0 !important;
+}
+article .meta p {
+  display:inline;
+  color:#404040;
+  font-family:'Open Sans','Helvetica',sans-serif;
+  font-weight:300;
+  font-size:21px;
+  margin:0;
+}
+.post-container {
+  margin-left:250px;
+  padding:3%;
+}
+.featured {
+  height:250px;
+  background-size:cover;
+  background-position: center center;
+  background-repeat:no-repeat;
+  position:relative;
+}
+.featured #featured-credit {
+  position:absolute;
+  bottom:0;
+  right:0;
+  height:auto;
+  width:auto;
+  background:#a7a7a7;
+  padding:2px;
+}
+.featured #featured-credit a {
+  font-size: 12px;
+  color:#eee;
+}
+.featured .title {
+  max-width: 80%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  background: rgba(235,235,235,0.5);
+  padding: 10px 3px;
+}
+.featured .title h1 {
+  text-transform: uppercase;
+  font-family:'Open Sans', 'Helvetica','Arial',sans-serif;
+  font-weight:800;
+}
+.post-meta {
+  margin:15px auto;
+  font-family:'Open Sans', 'Arial', sans-serif;
+}
+.post-meta p {
+  margin:0;
+  padding:0;
+}
+
+.the-post .content-container {
+  margin-top:2%;
+}
+.the-post .content-container h1 {
+  text-decoration:none;
+  color: #404040;
+  line-height:1.25;
+  font-family:'Open Sans','Arial',sans-serif;
+  font-weight:800;
+  text-transform:uppercase;
+  margin:10px 0;
+}
+.the-post .content-container p {
+  font-family:'Merriweather', sans-serif;
+  font-size:15px;
+  font-size: 1.5rem;
+  font-weight:300;
+  color:#000;
+}
+.small {
+  font-size:1.3rem;
+  font-size:13px;
+}
+.the-post .content-container a:hover {
+  text-decoration:underline;
+}
+.the-post .content-container .pullquote p{
+  font-family:'Open sans',sans-serif !important;
+  font-size:29px;
+  font-weight:700;
+  margin:1.5em;
+}
+.share {
+  width:50%;
+  height:24px;
+  margin-bottom: 1.5em;
+}
+.meta #article p {
+  font-family:'Merriweather','Helvetica',sans-serif;
+  font-size:15px;
+  font-size:1.5rem;
+  text-align:left;
+}
+.share img {
+  height:24px;
+  width:auto;
+  float:right;
+  padding:0 5px;
+}
+.pagination {
+  font-family:'Open Sans', sans-serif;
+  text-align:center;
+  margin:10px auto;
+}
+
+/* Navigation Styles */
+.sidebar {
+  width:180px;
+  position:fixed;
+  z-index:10;
+  height:100%;
+  padding:20px;
+  background-color: #006681;
+}
+.sidebar #menu {
+  height:100%;
+  padding:0 20px;
+}
+.sidebar p {
+  color: #2f2f2f;  
+}
+.sidebar .page-menu {
+  margin-bottom:10px;
+  font-size:18px;
+  font-size:1.8rem;
+}
+.sidebar ul {
+  margin:0 auto;
+}
+.sidebar .page-menu ul li a {
+  font-family:'Open Sans', sans-serif;
+  display:block;
+  padding:4px;
+  color:#eee;
+}
+.sidebar .page-menu ul li a:hover {
+  color:#0d597e;
+}
+/*.active {
+  background-color:#ccffff;
+}*/
+#cat select {
+  height:28px;
+}
+@-moz-document url-prefix() {
+  #cat {
+    background:#eee;
+  }
+  #cat select {
+    background:none !important;
+  }
+}
+.site-search {
+  padding:0 10px;
+  margin-bottom:15px;
+  border-radius:3px;
+  border:1px solid black;
+}
+input.site-search__search-term {
+  -webkit-appearance:none;
+  -webkit-border-radius:0;
+  -webkit-box-shadow:none;
+  outline:none;
+  width:100%;
+  height:28px;
+  line-height:1.25;
+  vertical-align: middle;
+  padding:0;
+  border:0 none;
+  font-family:'Open Sans', sans-serif;
+  font-size:18px;
+  font-size:1.8rem;
+  font-weight:300;
+  color:#2f2f2f;
+  background:transparent;
+}
+.list-item {
+  font-size:15px;
+  font-size:1.5rem;
+  line-height:1.25;
+  font-weight:300;
+}
+#pagination {
+  margin-bottom: 40px;
+  width: 100%;
+}
+#pagination .past-page {
+  float: right;
+}
+#pagination .next-page {
+  float: left;
+}
+.comments {
+  margin-left:250px;
+  padding:3%;
+}
+.comment-form {
+  max-width:650px;
+}
+.comment-form h2 {
+  font-family:'Open Sans', 'Helvetica', sans-serif;
+  font-weight:700;
+}
+#comment p {
+  float:left;
+  width: 48%;
+  margin-right: 4%;
+  margin-bottom: 10px;
+  text-indent: 0;
+}
+#comment label[for] {
+  display:none;
+}
+#comment input, textarea {
+  width:100%;
+  padding: 10px 0 10px 10px;
+  font-size: 15px;
+  font-weight: normal;
+  border: 1px solid rgba(22,36,54,0.2);
+  border-radius:4px;
+}
+#comment p + p {
+  margin-right:0;
+}
+#comment textarea {
+  min-height:150px;
+  max-height: 800px;
+  resize:vertical;
+}
+#comment p.textarea {
+  float:none;
+  width:100%;
+}
+#comment p.submit {
+  float:none;
+  margin-bottom:25px;
+}
+#comment button {
+  display:block;
+  padding: 9px 18px;
+  background:#4e82ce;
+  color:#fff;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  font-weight:700;
+  height:auto;
+  width:auto;
+}
+ul.commentlist {
+  margin:0;
+}
+.comment {
+  margin:10px auto;
+}
+.wrap #comment-name {
+  padding:2px 10px;
+  margin:0;
+}
+.wrap .comment-content p {
+  margin:0.5em;
+  font-size:15px;
+  font-size:1.5rem;
+}
+.counter {
+  font-size:14px;
+  border-bottom: 1px solid #707070;
+}
+.counter time {
+  float:left;
+  padding:0 10px;
+}
+.counter time a {
+  color:inherit;
+}
+.counter p {
+  margin:0 10px;
+  text-align:right;
+}
+.counter a {
+  text-decoration:none;
+  font-size:14px;
+  font-size:1.4rem;
+  color:rgb(220,220,220);
+}
+#dev-info {
+  position:absolute;
+  top:80%;
+  padding:0 20px;
+}
+#dev-info p a {
+  margin-bottom:0;
+  font-family:'Open Sans', sans-serif;
+  font-weight:300;
+  font-size:14px;
+  font-size:1.4rem;
+}
+#dev-info ul li {
+  display:inline;
+  margin-right:15px;
+}
+#dev-info ul li a {
+  font-family:'Open Sans', sans-serif;
+  font-weight:300;
+  font-size:14px;
+  font-size:1.4rem;
+}
+/* ---------- Media queries are for lovers ------------------ */
+@media screen and (max-width: 1028px) {
+  .headline {
+    font-size:28px;
+    font-size:2.8rem;
+    line-height:1.25;
+  }
+  .title h1 {
+    font-size:36px;
+    font-size: 3.6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display:none;
+  }
+  .primary,
+  .post-container {
+    margin:0 !important;
+  }
+  .featured {
+    height:150px;
+  }
+  .featured .title h1{
+    font-size:28px;
+    font-size:2.8rem;
+    line-height:1.25;
+  }
+  #mobile-header {
+    display: block;
+    width:90%;
+  }
+  #mobile-header ol {
+    margin: 15px 10px 0;
+  }
+  #mobile-header ol li {
+    list-style: none;
+    display:inline;
+    padding:25px;
+    text-transform: uppercase;
+  }
+  #mobile-header ol li a {
+    color: #574257;
+    font-family:'Open Sans','Helvetica','Arial',sans-serif;
+  }
+  .pagination {
+    font-size:24px;
+    font-size:2.4rem;
+    display:block;
+    margin:10px auto;
+  }
+  .headline {
+    font-size:28px;
+    font-size:2.8rem;
+  }
+  .comments {
+    margin:0 !important;
+  }
+}
+@media screen and (max-width : 480px) {
+  .post-snippet {
+    display:none !important;
+  }
+  .headline {
+    font-size:2.2rem;
+    font-size:22px;
+  }
+  .headline .title {
+    line-height:1;
+    vertical-align: middle;
+  }
+  .featured .title h1{
+    font-size:22px;
+    font-size:2.2rem;
+  }
+  .content h2 {
+    font-size:19px;
+    font-size:1.9rem;
+  }
+  .comment-form {
+    max-width: 90%;
+  }
+}
