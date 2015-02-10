@@ -572,8 +572,8 @@ article .meta p {
   right:0;
   height:auto;
   width:auto;
-  background:#a7a7a7;
-  padding:2px;
+  background:rgba(125,125,125,0.8);
+  padding:5px;
 }
 .featured #featured-credit a {
   font-size: 12px;
