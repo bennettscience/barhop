@@ -54,7 +54,7 @@
 	<ul>
 	  <li><a href="<?php echo rss_url(); ?>">RSS</a></li>
 	  <?php if(site_meta('twitter_account')) : ?>
-	  <li><a href="<?php echo site_meta('twitter_url'); ?>">Twitter</a></li>
+	  <li><a href="<?php echo twitter_url(); ?>">Twitter</a></li>
 	  <?php endif; ?>
 	  <?php if(user_authed()) : ?>
 	  <li><a href="<?php echo base_url('/admin'); ?>">Admin</a></li>

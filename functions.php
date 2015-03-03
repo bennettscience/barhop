@@ -5,7 +5,7 @@ function twitter_account() {
 }
 
 function twitter_url() {
-    return 'http://www.twitter.com/' . twitter_account();
+    return 'http://www.twitter.com/' . site_meta('twitter_account');
 }
 
 function pluralise($amount, $str, $alt = '') {
