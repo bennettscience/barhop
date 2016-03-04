@@ -25,14 +25,15 @@ $("img").each(function() {
 		  var imgSrc = $(this).attr('src');
 		  // If "flickr.com" is in the URL, run the function
 		  if (!/flickr\.com$/i.test(imgSrc)) {
-			// Get the photo ID from the src
-			photoId = imgSrc.split('/').pop().split('_')[0];
-			//Call the Flicmr API to get the photo info as JSON
-			var apiUrl = "https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=c8c95356e465b8d7398ff2847152740e&photo_id=" + photoId + "&format=json&jsoncallback=?";
-			// Put a credit after the image using the JSON data
-			var $this = $(this);
-			$.getJSON(apiUrl, function(data){
-			      $this.after('<a class="small" href="http://www.flickr.com/photos/'+data.photo.owner.nsid+'/'+data.photo.id+'/">'+data.photo.title._content+ ' by ' +data.photo.owner.username+'</a>');
-			})
-		  }
+			  // Get the photo ID from the src
+			  photoId = imgSrc.split('/').pop().split('_')[0];
+		  	//Call the Flicmr API to get the photo info as JSON
+			  var apiUrl = "https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=c8c95356e465b8d7398ff2847152740e&photo_id=" + photoId + "&format=json&jsoncallback=?";
+			  // Put a credit after the image using the JSON data
+			  var $this = $(this);
+			  $.getJSON(apiUrl, function(data){
+			    $this.after('<a class="small" href="http://www.flickr.com/photos/'+data.photo.owner.nsid+'/'+data.photo.id+'/">'+data.photo.title._content+ ' by ' +data.photo.owner.username+'</a>');
+			  })
+		  } else {
+				return
 	    })
