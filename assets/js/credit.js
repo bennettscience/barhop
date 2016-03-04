@@ -24,7 +24,7 @@ $("img").each(function() {
 		  // Grab the image URL to put through the API call
 		  var imgSrc = $(this).attr('src');
 		  // If "flickr.com" is in the URL, run the function
-		  if (!/flickr\.com$/i.test(imgSrc)) {
+		  if (/flickr/.test(imgSrc)) {
 			  // Get the photo ID from the src
 			  photoId = imgSrc.split('/').pop().split('_')[0];
 		  	//Call the Flicmr API to get the photo info as JSON
@@ -35,5 +35,6 @@ $("img").each(function() {
 			    $this.after('<a class="small" href="http://www.flickr.com/photos/'+data.photo.owner.nsid+'/'+data.photo.id+'/">'+data.photo.title._content+ ' by ' +data.photo.owner.username+'</a>');
 			  })
 		  } else {
-				return
-	    })
+				return;
+	    }
+		});
