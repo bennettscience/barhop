@@ -11,7 +11,7 @@ License: GNU General Public License
 /* ----------------------------------------------------------- */
 /* Reset
 -------------------------------------------------------------- */
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -664,14 +664,14 @@ article .meta p {
   z-index:10;
   height:100%;
   padding:20px;
-  background-color: #006681;
+  background-color: #222;
 }
 .sidebar #menu {
   height:100%;
   padding:0 20px;
 }
 .sidebar p {
-  color: #2f2f2f;  
+  color: #2f2f2f;
 }
 .sidebar .page-menu {
   margin-bottom:10px;

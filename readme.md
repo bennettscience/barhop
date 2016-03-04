@@ -4,12 +4,12 @@ Barhop is a lightweight theme designed for Anchor CMS. Page templates are in min
 - Markdown and HTML editing in Anchor
 - Fully mobile-responsive design
 - Featured image included in blog list (see below for setup)
-- Flickr image credits automatcally added ([see demo](http://dev.brianbennett.org/anchor)).
+- Flickr image credits automatically added ([blog post](http://blog.ohheybrian.com/more-attribution-done-just-for-you/)).
 - Post descriptions displayed on home page
 - Comment permalinks
 - Category article counts in the sidebar
 
-See a [live demo](http://dev.brianbennett.org/anchor)
+See a [live demo](http://ohheybrian.com/anchor)
 
 Currently, the Barhop theme is only available for Anchor. I'm planning on porting it over to Wordpress if I can get around to it.
 
@@ -44,13 +44,10 @@ Set up a reusable username variable:
    - Name: **twitter_account**
    - Value: **yourusername** - do **not** include '@'!
 
-## In the works...
-Anchor is a work in progress, currently on version 0.9. I'm working on building out tagging of posts in addition to categories, sticky posts, and searchable pages.
-
 ## Credits
 
 This theme is built for [Anchor CMS](http://www.anchorcms.com).
 
 ## License
 
-Barhop is created by Brian Bennett (2014) is licensed with [The MIT License](http://opensource.org/licenses/MIT) and is free to use, modify and distribute.
+Barhop is created by [Brian Bennett](http://ohheybrian.com) (2014) is licensed with [The MIT License](http://opensource.org/licenses/MIT) and is free to use, modify and distribute.
