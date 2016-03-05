@@ -10,10 +10,8 @@ $('.featured').ready(function(){
 	    function extractPhotoId() {
 			photoId = bg.split('/').pop().split('_')[0];
 	    }
-            console.log(photoId)
 
 	    var apiUrl = "https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=c8c95356e465b8d7398ff2847152740e&photo_id=" + photoId + "&format=json&jsoncallback=?";
-            console.log(apiUrl)
 
 	    $.getJSON(apiUrl, function(data){
 	        $("#credits").html('<a href="http://www.flickr.com/photos/'+data.photo.owner.nsid+'/'+data.photo.id+'/" target="blank">'+data.photo.title._content+ ' by ' +data.photo.owner.username+"</a>");
