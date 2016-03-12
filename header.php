@@ -2,7 +2,7 @@
 <html lang="en-US" style="height:100%;">
   <head>
     <!-- Meta -->
-    <meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
     <meta name="viewport" content="width=device-width" initial-scale="1">
     <meta name="generator" content="Anchor CMS">
     <!-- Page Title -->
@@ -24,7 +24,7 @@
 	  <div class="page-menu">
 	    <ul>
 	      <?php while(menu_items()) : ?>
-	      <li class="list-item"><a href="<?php echo menu_url('include-in-menu'); ?>" title="<?php echo menu_title(); ?>" class="<?php echo menu_active() ? 'active' : '' ?>"><?php echo menu_name(); ?></a></li>
+	      <li class="list-item"><a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>" class="<?php echo menu_active() ? 'active' : '' ?>"><?php echo menu_name(); ?></a></li>
 	      <?php endwhile; ?>
 	    </ul>
 	  </div>  
