@@ -22,8 +22,8 @@
                 
                         <p><?php echo article_markdown(); ?></p>
                     <div class="share">
-                        <a onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" href="http://www.twitter.com/share?url=<?php echo article_url(); ?>&text=<?php echo article_title(); ?><?php if(site_meta('twitter_account')) : ?>&via=<?php echo site_meta('twitter_account') ?><?php endif; ?>"><img src="<?php echo theme_url('assets/img/twitter.png'); ?>" /></a>
-                        <a href="<?php echo article_url(); ?>"><img src="<?php echo theme_url('assets/img/permalink.png'); ?>" /></a>
+                        <a onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" href="https://www.twitter.com/share?url=<?php echo article_full_url(); ?>&text=<?php echo article_title(); ?><?php if(site_meta('twitter_account')) : ?>&via=<?php echo site_meta('twitter_account') ?><?php endif; ?>"><img src="<?php echo theme_url('assets/img/twitter.png'); ?>" /></a>
+                        <a href="<?php echo article_full_url(); ?>"><img src="<?php echo theme_url('assets/img/permalink.png'); ?>" /></a>
                     </div>
                 </div>
                 <?php if(article_js() | article_css()): ?>
