@@ -51,4 +51,9 @@ function featured_color() {
     return Config::get('meta.color');
 };
 
+function article_full_url() {
+	$page = Registry::get('posts_page');
+	return full_url($page->slug . '/' . article_slug());
+}
+
 ?>
