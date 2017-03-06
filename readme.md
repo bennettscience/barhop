@@ -24,7 +24,7 @@ Barhop uses featured images to give a clean, modern look to your blog, but it mu
 2. Enter the following in the form:
    - Type: **post**
    - Field: **text**
-   - Unique Key: **featured-image** (this is the slug used by Anchor)
+   - Unique Key: **featured_image** (this is the slug used by Anchor)
    - Label: **Featured Image**
 3. Click **Update**
 4. To set a featured image in the post editor:
