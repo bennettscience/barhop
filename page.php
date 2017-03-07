@@ -1,8 +1,8 @@
 <?php theme_include('header'); ?>
 <div name="post">
         <div class="post-container">
-            <?php if(page_custom_field('page-featured-image')) : ?>
-            <div class="featured" style="background:url('<?php echo page_custom_field('page-featured-image')?>') " >
+            <?php if(page_custom_field('page_featured_image')) : ?>
+            <div class="featured" style="background:url('<?php echo page_custom_field('page_featured_image')?>') " >
             <?php else: ?>
             <div class="featured" id="<?php echo page_id(); ?>">
             <?php endif; ?>

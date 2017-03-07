@@ -1,8 +1,8 @@
 <?php theme_include('header'); ?>
 <div name="post">
         <div class="post-container">
-            <?php if(article_custom_field('featured-image')) : ?>
-            <div class="featured" style="background-image:url('<?php echo article_custom_field('featured-image')?>')" >
+            <?php if(article_custom_field('featured_image')) : ?>
+            <div class="featured" style="background-image:url('<?php echo article_custom_field('featured_image')?>')" >
             
                 <div id="featured-credit">
                         <a id="credits"></a>

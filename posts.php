@@ -3,8 +3,8 @@
       <div class="primary">
 	<div id="content" role="main">
             <?php if(has_posts()) : while(posts()) : ?>
-		  <?php if(article_custom_field('featured-image')): ?>
-			<article class="post" id="<?php echo article_id(); ?>" style="background-image:url('<?php echo article_custom_field('featured-image') ?>')">
+		  <?php if(article_custom_field('featured_image')): ?>
+			<article class="post" id="<?php echo article_id(); ?>" style="background-image:url('<?php echo article_custom_field('featured_image') ?>')">
 		  <?php elseif(article_custom_field('featured-color')) : ?>
 			<article class="post" id="<?php echo article_id(); ?>" style="background-color:<?php echo article_custom_field('featured-color') ?>">
 		  <?php else : ?>
